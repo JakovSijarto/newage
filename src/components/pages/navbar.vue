@@ -16,13 +16,13 @@
             v-if="view.isActive"
           >
             <li class="min-[431px]:hidden" id="navbar_naslovnica">
-                Naslovnica
+              <router-link to="/" tag="button">Home</router-link>
             </li>
             <li class="my-8 min-[431px]:hidden" id="navbar_naslovnica">
-                Naše usluge
+              <router-link to="/about" tag="button">About</router-link>
             </li>
             <li class="min-[431px]:hidden" id="navbar_naslovnica">
-                Kontakt
+              <router-link to="/contact" tag="button">Contact</router-link>
             </li>
           </ul>
         <button
