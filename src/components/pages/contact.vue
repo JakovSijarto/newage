@@ -5,11 +5,11 @@
             <div class="fixed top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex justify-center z-[-1] max-[300px]:top-[45%]">
                 <p class="text-[#0c0f16] big-text ">Contact</p>
                 <div class="absolute top-[-4em] max-[680px]:w-[510px] max-[530px]:w-auto max-[680px]:mx-8 max-[300px]:text-center">
-                      <div class="text-[60px] tracking-[2px] Barlow_Condensed font-semibold leading-[6rem] text-white max-[680px]:text-[40px] max-[680px]:leading-[3rem] max-[300px]:mb-[5px]">
-                      <p class="text-[20px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let's</p>
+                      <div v-motion-pop :delay="300" class="text-[60px] tracking-[2px] Barlow_Condensed font-semibold leading-[6rem] text-white max-[680px]:text-[40px] max-[680px]:leading-[3rem] max-[300px]:mb-[5px]">
+                      <p v-motion-pop :delay="600" class="text-[20px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let's</p>
                       TALK ABOUT YOUR PROJECT.
                     </div>
-                    <p class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Feel free to ask me any question or let's do to talk about our future collaboration.</p>
+                    <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Feel free to ask me any question or let's do to talk about our future collaboration.</p>
                 </div>
             </div>
        </section>

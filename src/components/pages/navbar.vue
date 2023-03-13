@@ -1,17 +1,17 @@
 <template>
     <div>
     <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8 max-[430px]:bg-[#11141B]">
-      <div class="flex justify-between items-center w-[1200px] max-[430px]:bg-[#11141B] max-[430px]:absolute max-[430px]:w-[100%]  max-[430px]:px-8 max-[430px]:py-[1rem]" >
-          <li><router-link to="/" tag="button"><img src="../../assets/logo.png" class="w-[64px] "></router-link></li>
-        <div class="flex justify-between items-center max-[430px]:hidden">
+      <div class="flex justify-between items-center w-[1200px] max-[430px]:absolute max-[430px]:w-[100%]  max-[430px]:px-8 max-[430px]:py-[1rem]" :class="{'bg-color-new':view.isActive}">
+          <li><router-link to="/" tag="button"><img src="../../assets/logo.svg" class="w-[64px] "></router-link></li>
+        <div class="flex justify-between items-center max-[430px]:hidden ">
           <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Home</router-link></li>
           <li class="mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About</router-link></li>
           <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Contact</router-link></li>
         </div>
         <ul
             id="hamburger-menu"
-            :class="{ active: view.isActive }"
-            class=" flex justify-center items-center flex-col text-center mt-64 min-[431px]:hidden mr-8"
+            :class="{ active: view.isActive,'onScroll': !view.topOfPage }"
+            class=" flex justify-center items-center flex-col text-center mt-64 min-[431px]:hidden mr-8 "
             
             v-if="view.isActive"
           >
@@ -125,6 +125,9 @@
       box-shadow: 0px 2px 0px 0px #181b21;
       background-color: #11141B;
       transition: all .2s ease-in-out;
+    }
+    .bg-color-new{
+      background-color: #11141B;
     }
     li {
           cursor: pointer;
