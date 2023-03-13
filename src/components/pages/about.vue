@@ -46,8 +46,8 @@
         </section>
         <section class="w-full flex justify-center flex-col items-center overflow-x-hidden">
             <div  class="absolute z-20 flex justify-between items-center w-[1200px] max-[1230px]:w-[1000px] max-[1030px]:flex-col max-[1030px]:w-full">
-                <p v-motion-slide-visible-top :delay="600" class="text-[45px] font-bold w-[600px] text-white leading-[4rem]  mt-[-6em] max-[1030px]:mt-[-7em] max-[1030px]:mb-[2em]  max-[1030px]:ml-[-2em] max-[720px]:ml-0  max-[720px]:text-[30px]  max-[720px]:w-[500px] max-[610px]:mt-[-14em] max-[530px]:w-auto max-[530px]:mx-8">So that's us. There is no other way to put it.</p>
-                <div v-motion-slide-visible-bottom class="w-[470px] h-[520px] bg-[#75dab4] py-[80px] px-[40px] max-[1030px]:w-[690px]  max-[1030px]:h-[487px] max-[720px]:w-[510px] max-[720px]:h-[507px] max-[530px]:w-[400px] max-[415px]:w-[300px] max-[415px]:h-[680px] max-[320px]:w-[250px] max-[320px]:px-[20px] max-[320px]:py-[10px] max-[320px]:h-[550px]">
+                <p v-motion-slide-top :delay="600" class="text-[45px] font-bold w-[600px] text-white leading-[4rem]  mt-[-6em] max-[1030px]:mt-[-7em] max-[1030px]:mb-[2em]  max-[1030px]:ml-[-2em] max-[720px]:ml-0  max-[720px]:text-[30px]  max-[720px]:w-[500px] max-[610px]:mt-[-14em] max-[530px]:w-auto max-[530px]:mx-8">So that's us. There is no other way to put it.</p>
+                <div v-motion-slide-bottom class="w-[470px] h-[520px] bg-[#75dab4] py-[80px] px-[40px] max-[1030px]:w-[690px]  max-[1030px]:h-[487px] max-[720px]:w-[510px] max-[720px]:h-[507px] max-[530px]:w-[400px] max-[415px]:w-[300px] max-[415px]:h-[680px] max-[320px]:w-[250px] max-[320px]:px-[20px] max-[320px]:py-[10px] max-[320px]:h-[550px]">
                     <p class="mb-[10px] text-[12px] font-light tracking-[4px] text-[#0c0f16]">OUR HAPPY CLIENTS</p>
                     <p class="text-[#0c0f16] text-[30px] font-bold max-[320px]:text-[25px]">What Client's Say?</p>
                     <div class="" >
@@ -56,7 +56,7 @@
                             <div>
                                 <p class="mt-[60px] max-[320px]:mt-[20px] pb-[30px] mb-[30px] text-[#333] text-[17px] leading-[2rem] text-left font-light" style="border-bottom: 1px solid rgba(0, 0, 0, 0.05);">{{ slide_content[slide] }}</p>
                                 <div class="flex items-center">
-                                    <img src="" alt="" class="w-[70px] h-[60px] rounded-full object-fit">
+                                    <img src="../../assets/businessman1.svg" alt="" class="w-[70px] h-[60px] rounded-full object-fit">
                                     <div class="text-left ml-[15px]">
                                         <p class="text-[#0c0f16] tracking-[2px] mb-[2px] uppercase font-bold">{{ slide_name[slide] }}</p>
                                         <p class="text-[#0c0f16] font-light text-[13px]">{{ slide_proffesion[slide] }}</p>
@@ -76,7 +76,7 @@
             <div class="w-full py-[50px] bg-[#11141B] ">
                 <div class="flex justify-center items-center ">
                 <div class="flex justify-start text-white w-[1200px] items-center max-[1230px]:w-[1000px] max-[1030px]:justify-center max-[1030px]:w-full max-[610px]:flex-col ">
-                    <div v-motion-slide-visible-left :delay="600" class="flex flex-row items-center mr-32 max-[1230px]:mr-8 max-[1030px]:mr-32 max-[610px]:mr-0 max-[610px]:mb-16">
+                    <div v-motion-slide-left :delay="600" class="flex flex-row items-center mr-32 max-[1230px]:mr-8 max-[1030px]:mr-32 max-[610px]:mr-0 max-[610px]:mb-16">
                         <svg class="CircularProgressbar " viewBox="0 0 120 100" data-test-id="CircularProgressbar">
                         <path class="CircularProgressbar-trail" style="stroke:#0f1218;stroke-dasharray:307.8760800517997px 307.8760800517997px;stroke-dashoffset:0px" d="
                                 M 50,50
@@ -125,23 +125,23 @@
             </div>
         </section>
         <section class="w-full h-[60em] flex justify-center items-center max-[1065px]:h-[100em] max-[730px]:h-[80em]">
-            <div class="flex justify-center items-center flex-row max-[1065px]:flex-col max-[540px]:mx-8">
-                <img src="../../assets/temp_aboutus.svg" alt="" v-motion-slide-visible-left class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
-                <div v-motion-slide-visible-right :delay="200" class="pl-[40px] text-white max-[1065px]:mt-[60px] max-[1065px]:flex max-[1065px]:flex-col max-[1065px]:justify-start max-[1065px]:w-[700px] max-[1065px]:pl-0 max-[730px]:w-[500px] max-[540px]:w-auto  ">
+            <div v-motion-slide-right  class="flex justify-center items-center flex-row max-[1065px]:flex-col max-[540px]:mx-8">
+                <img src="../../assets/temp_aboutus.svg" alt="" class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
+                <div class="pl-[40px] text-white max-[1065px]:mt-[60px] max-[1065px]:flex max-[1065px]:flex-col max-[1065px]:justify-start max-[1065px]:w-[700px] max-[1065px]:pl-0 max-[730px]:w-[500px] max-[540px]:w-auto  ">
                     <p class="text-[40px] leading-[1.5rem] mb-[20px] Barlow_Condensed font-black ">About us.</p>
-                    <p v-motion-slide-visible-bottom :delay="200" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem] w-[500px] max-[1065px]:w-auto">Our creative Adagency is ranked among the finest in the US. We cultivate smart ideas for start-ups and seasoned players.</p>
+                    <p class="text-[#c8c8c8] text-[15px] font-light leading-[2rem] w-[500px] max-[1065px]:w-auto">Our creative Adagency is ranked among the finest in the US. We cultivate smart ideas for start-ups and seasoned players.</p>
                     <li class="list-none">
                         <ul class="pb-[30px] mt-[25px]" style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
                             <h6 class="mb-[5px] leading-[1.5rem] text-[18px] font-medium flex items-center"><span class="span_number w-[30px]">1</span> Our Mission</h6>
-                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]" v-motion-slide-visible-right :delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </ul>
                         <ul class="pb-[30px] mt-[25px]" style="border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
                             <h6 class="mb-[5px] leading-[1.5rem] text-[18px] font-medium flex items-center"><span class="span_number w-[30px]">2</span> Our Goals</h6>
-                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]" v-motion-slide-visible-right :delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </ul>
                         <ul class="pb-[30px] mt-[25px]">
                             <h6 class="mb-[5px] leading-[1.5rem] text-[18px] font-medium flex items-center"><span class="span_number w-[30px]">3</span> Why Us?</h6>
-                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]" v-motion-slide-visible-right :delay="400">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="pl-[45px] text-[13px] font-light leading-[2rem] text-[#c8c8c8]">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         </ul>
                     </li>
                 </div>
@@ -150,16 +150,17 @@
         <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden" >
       <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
       <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
-        <div v-motion-slide-visible-left>
+        <div v-motion-slide-left>
         <p class="text-[#74D5AF] tracking-[0.3rem] mb-[30px] contact_text_font1 max-[400px]:text-[50vw]">LET'S TALK</p>
         <p class=" bold_text text-[transparent] font-bold  max-[1220px]:leading-[3rem] max-[460px]:text-[10px] contact_text_font2 max-[400px]:leading-[2rem] max-[400px]:pr-8" style="-webkit-text-stroke: 1px white; ">ABOUT YOUR <span class="  naslov_sec2 bold_text" style="text-shadow:none; letter-spacing: -2px;">NEXT PROJECT</span>.</p>
       </div>
-      <button v-motion-slide-visible-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem] max-[1220px]:py-[5px] px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()"><router-link to="/contact" tag="button">Get In Touch!</router-link></button>
+      <button v-motion-slide-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem] max-[1220px]:py-[5px] px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()"><router-link to="/contact" tag="button">Get In Touch!</router-link></button>
       </div>
     </section>
     <footer_page />
     </div>
 </template>
+
 <script setup>
     import navbar from './navbar.vue';
     import footer_page from './footer.vue';
@@ -184,7 +185,7 @@ export default {
                         ,"Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero recusandae aspernatur reiciendis ad officiis, blanditiis tempora optio impedit aut illo?"],
         slide_name:["","Elon Musk","Mark Zuckerberg","Warren Buffet"],
         slide_proffesion:["","CEO, Zagreb","Co-Founder, Varaždin","Director, Split"],
-        slide_images:["../../assets/businessman1.svg"]
+        slide_images:[""]
     }
   }
 }

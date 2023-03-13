@@ -18,21 +18,21 @@
           <p class="font-bold mb-[50px] leading-[1.4rem] text-[30px] text-white">Javite nam se.</p>
           <div class="flex justify-between max-[630px]:flex-col ">
             <div class="w-[49%] max-[630px]:w-full">
-              <input type="text" name="user_name" placeholder="Ime" class="">
+              <input type="text" name="user_name" placeholder="Ime" class="" required>
             </div>
-            <div class="w-[49%] max-[630px]:w-full">
-              <input type="text" name="user_name" placeholder="Prezime">
+            <div class="w-[49%] max-[630px]:w-full max-[630px]:mt-[16px]">
+              <input type="text" name="user_name" placeholder="Prezime" required>
             </div>
           </div>
           <div class="flex justify-between max-[630px]:flex-col">
             <div class="w-[49%] max-[630px]:w-full my-[1rem]">
-              <input type="email" name="user_email" placeholder="Email">
+              <input type="email" name="user_email" placeholder="Email" required>
             </div>
-            <div class="w-[49%] max-[630px]:w-full my-[1rem]">
-              <input type="tel" name="user_tel" placeholder="Telefon">
+            <div class="w-[49%] max-[630px]:w-full my-[1rem] max-[630px]:mb-[16px] max-[630px]:mt-[0px]">
+              <input type="tel" name="user_tel" placeholder="Telefon" required>
             </div>
           </div>
-            <input type="text" name="user_url" placeholder="Postojeća Stranica">
+            <input type="text" name="user_url" placeholder="Postojeća Stranica" required  >
             <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Zainteresirani</p>
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
@@ -61,7 +61,7 @@
             
             <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed mt-8">Ulog</p>
             <div class="flex justify-between w-[600px] max-[630px]:w-auto max-[630px]:flex-col text-white my-4">
-              <div class="flex flex-col ">
+              <div class="flex flex-col " required>
                 <div class="inline-flex my-4">
                   <input type="radio" name="money" value="Manje od 100" class="mr-4">
                   <p class="text-[#999]">Manje od 100</p>
@@ -106,8 +106,9 @@ export default {
         }, (error) => {
             console.log('FAILED...', error.text);
         });
-        
+        window.location.reload()
     }
+
   }
 }
 </script>

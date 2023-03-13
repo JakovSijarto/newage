@@ -34,8 +34,8 @@
           <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">Hello! I’m Alex Smith. Web designer from USA, California, San Francisco. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.</p>
         <div class="max-[600px]:text-center"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">DOWNLOAD RESUME</button></div>
       </div>
-      <div class="flex justify-center items-center w-full">
-        <div class="flex mt-32 flex-col text-white w-[640px] max-[1150px]:w-[530px] max-[1150px]:mt-16 max-[1150px]:mr-8 max-[600px]:w-[300px] max-[600px]:mr-0  max-[320px]:w-[200px]" v-motion-slide-visible-right :delay="300">
+      <div class="flex justify-center items-center w-full" v-motion-pop :delay="300">
+        <div class="flex mt-32 flex-col text-white w-[640px] max-[1150px]:w-[530px] max-[1150px]:mt-16 max-[1150px]:mr-8 max-[600px]:w-[300px] max-[600px]:mr-0  max-[320px]:w-[200px]" >
               <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">DEVELOPMENT</p>
             <div class="relative bg-[white] bg-opacity-[0.05] h-[7px] mb-[80px]"><div class="w-[90%] bg-[#74D5AF] h-full absolute opacity-1 tooltip" data-value="90%"></div></div>
               <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">UI / UX DESIGN</p>
@@ -117,60 +117,53 @@
         </div>
       </div>
         <div class="max-[1200px]:absolute ">
-          <p class="text-[#0c0f16] big-text ">Portfolio</p>
-          
+          <p class="text-[#0c0f16] big-text ">Portfolio</p>    
         </div>
       </div>
-      <div class="grid place-content-center mt-16 mx-8 overflow-x-hidden" >
+
+      <div class="grid place-content-center mt-16 mx-8  overflow-x-hidden" >
           <div class="w-full relative grid grid-cols-2 gap-4 place-content-center gap-x-[6rem] max-[800px]:gap-x-[2.5rem] max-[700px]:gap-x-[0rem] max-[700px]:grid-cols-1">
-            <div>
-              <div class="text-center mt-[100px] max-[700px]:my-[50px] overflow-hidden" v-if="restaurants" v-motion-slide-left>
-              <img src="../../assets/test_photo1.svg" alt="" class="cursor-pointer w-[500px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer">
+            <div class="text-center mt-[100px] max-[700px]:my-[50px] ">
+              <div class="overflow-hidden" v-if="restaurants" v-motion-slide-left>
+              <img src="../../assets/test_photo1.svg" alt="" class="cursor-pointer w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer">
             </div>
-            <div>
               <p class="text-white text-[18px] font-bold pt-[2em] pb-[7px]" v-motion-slide-top :delay="300">Creativity Rest</p>
               <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
             </div>
-            </div>
 
-            <div>
-              <div class="text-center max-[700px]:my-[50px] overflow-hidden" v-if="other" v-motion-slide-right>
+            <div class="text-center max-[700px]:my-[50px] ">
+              <div class="overflow-hidden" v-if="other" v-motion-slide-right>
                 <img src="../../assets/test_photo2.svg" alt="" class="cursor-pointer w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer">
               </div>
-              <div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Demand</p>
                 <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
-              </div>
             </div>
-            <div>
-              <div class="text-center mt-[50px] max-[700px]:my-[50px] overflow-hidden" v-if="restaurants" v-motion-slide-left>
+            <div class="text-center mt-[50px] max-[700px]:my-[50px] ">
+              <div class="overflow-hidden" v-if="restaurants" v-motion-slide-left>
                 <img src="../../assets/test_photo3.svg" alt="" class="cursor-pointer w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer">
               </div>
-              <div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Rest</p>
                 <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
-              </div>
             </div>
-            <div>
-              <div class="text-center max-[700px]:my-[50px] overflow-hidden" v-if="other" v-motion-slide-right>
+            <div class="text-center max-[700px]:my-[50px] ">
+              <div class="overflow-hidden" v-if="other" v-motion-slide-right>
                 <img src="../../assets/test_photo4.svg" alt="" class="cursor-pointer w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer">
               </div>
-              <div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Other</p>
                 <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
-              </div>
             </div>
           </div>
       </div>
     </section>
+  -->
     <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden" >
       <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
       <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
-        <div v-motion-slide-visible-left>
+        <div v-motion-slide-left>
         <p class="text-[#74D5AF] tracking-[0.3rem] mb-[30px] contact_text_font1 max-[400px]:text-[50vw]">LET'S TALK</p>
         <p class=" bold_text text-[transparent] font-bold  max-[1220px]:leading-[3rem] max-[460px]:text-[10px] contact_text_font2 max-[400px]:leading-[2rem]" style="-webkit-text-stroke: 1px white; ">ABOUT YOUR <span class="  naslov_sec2 bold_text !tracking-[-2px] max-[400px]:!tracking-[2px]" style="text-shadow:none;">NEXT PROJECT</span>.</p>
       </div>
-      <button v-motion-slide-visible-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem] max-[1220px]:py-[5px] px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()"><router-link to="/contact" tag="button">Get In Touch</router-link></button>
+      <button v-motion-slide-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem]  px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()"><router-link to="/contact" tag="button">Get In Touch</router-link></button>
       </div>
     </section>
     <footer_page />
@@ -208,6 +201,7 @@
   
 </script>
 <style>
+
 .transition-footer-button:hover{
   color:white;
   transition:all 0.5s ease-in;
@@ -286,6 +280,7 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 /* For Firefox */
 progress::-moz-progress-bar {
   background-color: #74D5AF;
