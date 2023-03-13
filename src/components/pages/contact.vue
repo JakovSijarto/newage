@@ -18,21 +18,21 @@
           <p class="font-bold mb-[50px] leading-[1.4rem] text-[30px] text-white">Javite nam se.</p>
           <div class="flex justify-between max-[630px]:flex-col ">
             <div class="w-[49%] max-[630px]:w-full">
-              <input type="text" name="user_name" placeholder="Ime" class="" required>
+              <input type="text" name="user_name" placeholder="Ime" class="" required v-model="ime">
             </div>
             <div class="w-[49%] max-[630px]:w-full max-[630px]:mt-[16px]">
-              <input type="text" name="user_name" placeholder="Prezime" required>
+              <input type="text" name="user_name" placeholder="Prezime" required v-model="prezime">
             </div>
           </div>
           <div class="flex justify-between max-[630px]:flex-col">
             <div class="w-[49%] max-[630px]:w-full my-[1rem]">
-              <input type="email" name="user_email" placeholder="Email" required>
+              <input type="email" name="user_email" placeholder="Email" required v-model="email">
             </div>
             <div class="w-[49%] max-[630px]:w-full my-[1rem] max-[630px]:mb-[16px] max-[630px]:mt-[0px]">
-              <input type="tel" name="user_tel" placeholder="Telefon" required>
+              <input type="tel" name="user_tel" placeholder="Telefon" required v-model="telefon">
             </div>
           </div>
-            <input type="text" name="user_url" placeholder="Postojeća Stranica" required  >
+            <input type="text" name="user_url" placeholder="Postojeća Stranica" required  v-model="stranica">
             <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Zainteresirani</p>
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
@@ -83,7 +83,7 @@
                 
             </div>
             </div>
-            <textarea name="message" placeholder="Message" class="mt-[30px] p-[15px] min-h-[200px] text-[white] bg-transparent max-h-[250px] mb-[1rem]" style="border: 1px solid rgba(255, 255, 255, 0.3);"></textarea>
+            <textarea name="message" placeholder="Message" v-model="poruka" class="mt-[30px] p-[15px] min-h-[200px] text-[white] bg-transparent max-h-[250px] mb-[1rem]" style="border: 1px solid rgba(255, 255, 255, 0.3);"></textarea>
             <input type="submit" value="Pošalji" class="float-right h-[50px] cursor-pointer"> 
         </form>
        </section>
@@ -98,16 +98,32 @@
 import emailjs from 'emailjs-com';
 
 export default {
+  data(){
+    return{
+      ime:"",
+      prezime:"",
+      email:"",
+      telefon:"",
+      stranica:"",
+      poruka:""
+    }
+  },
   methods: {
     sendEmail() {
       emailjs.sendForm('service_ggomcme', 'template_i62uyo3', this.$refs.form, 'ti7ZWmhQJZHXoPZYv')
         .then((result) => {
             console.log('SUCCESS!', result.text);
+            this.ime = ""
+            this.prezime = ""
+            this.email = ""
+            this.telefon = ""
+            this.stranica = ""
+            this.poruka = ""
         }, (error) => {
             console.log('FAILED...', error.text);
         });
-        document.location.href = "/contact";
-    }
+        
+    },
 
   }
 }
