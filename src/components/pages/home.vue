@@ -1,5 +1,6 @@
 <template>
     <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden">
+      <loader/>
     <div class="bg-[black] w-full ">
       <video  class="opacity-60 h-[100vh] w-full object-cover " autoplay loop muted plays-inline>
         <source src="../../assets/bg-video.mp4" type="video/mp4">
@@ -155,7 +156,6 @@
           </div>
       </div>
     </section>
-  -->
     <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden" >
       <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
       <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
@@ -172,6 +172,7 @@
 <script setup>
   import navbar from './navbar.vue';
   import footer_page from './footer.vue'; 
+  import loader from './pageLoader.vue';
 </script>
 
 <script>
