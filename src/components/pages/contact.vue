@@ -37,22 +37,22 @@
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
                 <div class="inline-flex my-4">
-                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="mr-4">
-                  <p class="text-[#999]">Dizajn i izrada nove web stranice</p>
+                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]" style="">
+                  <p class="text-[#999] ml-4">Dizajn i izrada nove web stranice</p>
                 </div>  
               <div class="inline-flex">
-                <input type="checkbox" name="zainteresirani" value="Izrada web aplikacije" class="mr-4">
-                <p class="text-[#999]">Izrada web aplikacije</p>
+                <input type="checkbox" name="zainteresirani" value="Izrada web aplikacije" class="max-w-[20px]">
+                <p class="text-[#999] ml-4">Izrada web aplikacije</p>
               </div>
             </div>
             <div class="flex flex-col">
               <div class="inline-flex my-4">
-                <input type="checkbox" name="zainteresirani" value="Redizajn postojećeg weba" class="mr-4">
-                <p class="text-[#999]">Redizajn postojećeg weba</p>
+                <input type="checkbox" name="zainteresirani" value="Redizajn postojećeg weba" class="max-w-[20px]">
+                <p class="text-[#999] ml-4">Redizajn postojećeg weba</p>
               </div>
               <div class="inline-flex">
-                <input type="checkbox" name="zainteresirani" value="Custom rješenje" class="mr-4">
-                <p class="text-[#999]">Custom rješenje</p>
+                <input type="checkbox" name="zainteresirani" value="Custom rješenje" class="max-w-[20px]">
+                <p class="text-[#999] ml-4">Custom rješenje</p>
               </div>
               
             </div>
@@ -63,22 +63,22 @@
             <div class="flex justify-between w-[600px] max-[630px]:w-auto max-[630px]:flex-col text-white my-4">
               <div class="flex flex-col " required>
                 <div class="inline-flex my-4">
-                  <input type="radio" name="money" value="Manje od 100" class="mr-4">
-                  <p class="text-[#999]">Manje od 100</p>
+                  <input type="radio" name="money" value="Manje od 100" class="">
+                  <p class="text-[#999] ml-4">Manje od 100</p>
                 </div>
                 <div class="inline-flex">
-                  <input type="radio" name="money" value="200 do 500" class="mr-4">
-                  <p class="text-[#999]">200 do 500</p>
+                  <input type="radio" name="money" value="200 do 500" class="">
+                  <p class="text-[#999] ml-4">200 do 500</p>
                 </div>  
             </div>
             <div class="flex flex-col">
               <div class="inline-flex my-4">
-                <input type="radio" name="money" value="500 do 1000" class="mr-4">
-                <p class="text-[#999]">500 do 1000</p>
+                <input type="radio" name="money" value="500 do 1000" class="">
+                <p class="text-[#999] ml-4">500 do 1000</p>
               </div>
               <div class="inline-flex">
-                <input type="radio" name="money" value="vise od 1000" class="mr-4">
-                <p class="text-[#999]">vise od 1000</p>
+                <input type="radio" name="money" value="vise od 1000" class="">
+                <p class="text-[#999] ml-4">vise od 1000</p>
               </div>
                 
             </div>
@@ -178,13 +178,10 @@ input[type=submit] {
   padding: 12px 35px;
   transition: 0.6s all ease-in;
 }
-input[type=submit]:hover {
-  background-color: #fff;
-  color:black;
-  transition: 0.3s all ease-in;
-}
+
 input[type=radio],input[type=checkbox]{
-  width: 10px;
+width:30px;
+accent-color: #58585825;
 }
 
 input[type=text],[type=email],[type=tel]{
@@ -194,5 +191,12 @@ input[type=text],[type=email],[type=tel]{
     background: transparent;
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media(hover:hover){
+input[type=submit]:hover {
+  background-color: #fff;
+  color:black;
+  transition: 0.3s all ease-in;
+}
 }
 </style>

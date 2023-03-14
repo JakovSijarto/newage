@@ -32,8 +32,8 @@
           </div>
             <p class="text-[2.5rem] leading-[3rem] py-4 font-bold mr-8 max-[600px]:text-center max-[600px]:text-[1.5rem] max-[600px]:mx-0">My mission is design develop the best Websites around.</p>
           <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">Hello! I’m Alex Smith. Web designer from USA, California, San Francisco. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique.</p>
-        <div class="max-[600px]:text-center"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">DOWNLOAD RESUME</button></div>
-      </div>
+        <div class="max-[600px]:text-center"><router-link to="/contact" tag="button"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">CONTACT US</button></router-link></div>
+        </div>
       <div class="flex justify-center items-center w-full" v-motion-pop :delay="300">
         <div class="flex mt-32 flex-col text-white w-[640px] max-[1150px]:w-[530px] max-[1150px]:mt-16 max-[1150px]:mr-8 max-[600px]:w-[300px] max-[600px]:mr-0  max-[320px]:w-[200px]" >
               <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">DEVELOPMENT</p>
@@ -121,36 +121,36 @@
         </div>
       </div>
 
-      <div class="grid place-content-center mt-16 mx-8  overflow-x-hidden" >
+      <div class="grid place-content-center mt-16 mx-8  overflow-hidden" >
           <div class="w-full relative grid grid-cols-2 gap-4 place-content-center gap-x-[6rem] max-[800px]:gap-x-[2.5rem] max-[700px]:gap-x-[0rem] max-[700px]:grid-cols-1">
-            <div class="text-center mt-[100px] max-[700px]:my-[50px] ">
-              <div class="overflow-hidden" v-if="restaurants" v-motion-slide-left>
-              <img src="../../assets/test_photo1.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
+            <div class="text-center mt-[100px] max-[700px]:my-[50px] " v-if="restaurants">
+              <div class="overflow-hidden"  v-motion-pop>
+              <img src="../../assets/test_photo1.svg" alt="" class="w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
             </div>
-              <p class="text-white text-[18px] font-bold pt-[2em] pb-[7px]" v-motion-slide-top :delay="300">Creativity Rest</p>
-              <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
+              <p class="text-white text-[18px] font-bold pt-[2em] pb-[7px]">Creativity Rest</p>
+              <p class="text-[#999]">Lorem, ipsum dolor.</p>
             </div>
 
-            <div class="text-center max-[700px]:my-[50px] ">
-              <div class="overflow-hidden" v-if="other" v-motion-slide-right>
+            <div class="text-center max-[700px]:my-[50px] " v-if="other" >
+              <div class="overflow-hidden" v-motion-pop>
                 <img src="../../assets/test_photo2.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
               </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Demand</p>
-                <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
+                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Creativity Demand</p>
+                <p class="text-[#999]">Lorem, ipsum dolor.</p>
             </div>
-            <div class="text-center mt-[50px] max-[700px]:my-[50px] ">
-              <div class="overflow-hidden" v-if="restaurants" v-motion-slide-left>
+            <div class="text-center mt-[50px] max-[700px]:my-[50px] " v-if="restaurants">
+              <div class="overflow-hidden" v-motion-pop>
                 <img src="../../assets/test_photo3.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
               </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Rest</p>
-                <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
+                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Creativity Rest</p>
+                <p class="text-[#999]">Lorem, ipsum dolor.</p>
             </div>
-            <div class="text-center max-[700px]:my-[50px] ">
-              <div class="overflow-hidden" v-if="other" v-motion-slide-right>
+            <div class="text-center max-[700px]:my-[50px] " v-if="other">
+              <div class="overflow-hidden" v-motion-pop>
                 <img src="../../assets/test_photo4.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
               </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]" v-motion-slide-top :delay="300">Creativity Other</p>
-                <p class="text-[#999]" v-motion-slide-bottom :delay="400">Lorem, ipsum dolor.</p>
+                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Creativity Other</p>
+                <p class="text-[#999]">Lorem, ipsum dolor.</p>
             </div>
           </div>
       </div>
@@ -202,19 +202,11 @@
 </script>
 <style>
 
-.transition-footer-button:hover{
-  color:white;
-  transition:all 0.5s ease-in;
-}
+
 .animation-contact-button, .transition-footer-button{
     transition:all 0.5s ease-in;
   }
-  .animation-contact-button:hover{
-    background-color: #fff;
-    color:black;
-    transition:all 0.2s ease-in;
 
-  }
 
 .Barlow_Condensed{
   font-family: 'Barlow Condensed', sans-serif;
@@ -276,11 +268,21 @@
   font-size: 20vw;
 }
 }
+@media (hover:hover){
+.transition-footer-button:hover{
+  color:white;
+  transition:all 0.5s ease-in;
+}  .animation-contact-button:hover{
+    background-color: #fff;
+    color:black;
+    transition:all 0.2s ease-in;
+
+  }
+}
 </style>
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 /* For Firefox */
 progress::-moz-progress-bar {
   background-color: #74D5AF;
@@ -343,5 +345,6 @@ progress::-moz-progress-bar {
   .contact_text_font1{
     font-size: max(0.4vw, 100%, 0.4vw)
   }
+
 
 </style>
