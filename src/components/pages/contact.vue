@@ -119,6 +119,7 @@ export default {
             this.telefon = ""
             this.stranica = ""
             this.poruka = ""
+            alert("Message Sent Succesfully!!")
         }, (error) => {
             console.log('FAILED...', error.text);
         });
@@ -181,7 +182,7 @@ input[type=submit] {
 
 input[type=radio],input[type=checkbox]{
 width:30px;
-accent-color: #58585825;
+accent-color: #75dab4;
 }
 
 input[type=text],[type=email],[type=tel]{
@@ -191,12 +192,5 @@ input[type=text],[type=email],[type=tel]{
     background: transparent;
     border: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-@media(hover:hover){
-input[type=submit]:hover {
-  background-color: #fff;
-  color:black;
-  transition: 0.3s all ease-in;
-}
 }
 </style>
