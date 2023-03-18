@@ -120,13 +120,6 @@ export default {
       emailjs.sendForm('service_clwuk55', 'template_8k7mdkr', this.$refs.form, '6y58hytHJtD9eVBSB')
         .then((result) => {
             console.log('SUCCESS!', result.text);
-            this.ime = ""
-            this.prezime = ""
-            this.email = ""
-            this.telefon = ""
-            this.stranica = ""
-            this.poruka = ""
-            this.checked_none = false
             swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
 "success"}).then(function(){ 
    location.reload();
