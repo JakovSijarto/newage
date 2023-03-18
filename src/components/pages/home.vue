@@ -35,7 +35,7 @@
           </div>
             <p class="text-[2.5rem] leading-[3rem] py-4 font-bold mr-8 max-[600px]:text-center max-[600px]:text-[1.5rem] max-[600px]:mx-0">Naša misija je raditi najkvalitetnije stranice za naše klijente.</p>
           <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">Moje ime je Jakov, iskusan sam programer sa više od 6 godina iskustva u industriji. Sa snažnim znanjem u raznim područjima web developmenta, uključujući frontend i backend programiranje, UX/UI dizajn, stekao sam reputaciju kao stručnjak za kreiranje visoko kvalitetnih i funkcionalnih web rješenja za svoje klijente. </p>
-        <div class="max-[600px]:text-center"><router-link to="/contact" tag="button"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">SAZNAJ VIŠE</button></router-link></div>
+        <div class="max-[600px]:text-center"><router-link to="/contact" tag="button"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">JAVITE SE</button></router-link></div>
         </div>
       <div class="flex justify-center items-center w-full" v-motion-pop :delay="300">
         <div class="flex mt-32 flex-col text-white w-[640px] max-[1150px]:w-[530px] max-[1150px]:mt-16 max-[1150px]:mr-8 max-[600px]:w-[300px] max-[600px]:mr-0  max-[320px]:w-[200px]" >

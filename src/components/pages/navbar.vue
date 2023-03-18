@@ -4,9 +4,9 @@
       <div class="flex justify-between items-center w-[1200px] max-[430px]:absolute max-[430px]:w-[100%]  max-[430px]:px-8 max-[430px]:py-[1rem]" :class="{'bg-color-new':view.isActive}">
           <li><router-link to="/" tag="button"><img src="../../assets/logo.svg" class="w-[64px] "></router-link></li>
         <div class="flex justify-between items-center max-[430px]:hidden ">
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Home</router-link></li>
-          <li class="mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About</router-link></li>
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Contact</router-link></li>
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Naslovnica</router-link></li>
+          <li class="mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">O nama</router-link></li>
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Kontakt</router-link></li>
         </div>
         <ul
             id="hamburger-menu"
@@ -16,13 +16,13 @@
             v-if="view.isActive"
           >
             <li class="min-[431px]:hidden" id="navbar_naslovnica">
-              <router-link to="/" tag="button">Home</router-link>
+              <router-link to="/" tag="button">Naslovnica</router-link>
             </li>
             <li class="my-8 min-[431px]:hidden" id="navbar_naslovnica">
-              <router-link to="/about" tag="button">About</router-link>
+              <router-link to="/about" tag="button">O nama</router-link>
             </li>
             <li class="min-[431px]:hidden" id="navbar_naslovnica">
-              <router-link to="/contact" tag="button">Contact</router-link>
+              <router-link to="/contact" tag="button">kontakt</router-link>
             </li>
           </ul>
         <button
