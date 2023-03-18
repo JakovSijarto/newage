@@ -127,7 +127,11 @@ export default {
             this.stranica = ""
             this.poruka = ""
             this.checked_none = false
-            swal("Good job!", "You clicked the button!", "success");
+            swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
+"success"}).then(function(){ 
+   location.reload();
+   }
+);
         }, (error) => {
             console.log('FAILED...', error.text);
         });
