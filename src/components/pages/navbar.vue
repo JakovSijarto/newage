@@ -22,7 +22,7 @@
               <router-link to="/about" tag="button">O nama</router-link>
             </li>
             <li class="min-[431px]:hidden" id="navbar_naslovnica">
-              <router-link to="/contact" tag="button">kontakt</router-link>
+              <router-link to="/contact" tag="button">Kontakt</router-link>
             </li>
           </ul>
         <button
