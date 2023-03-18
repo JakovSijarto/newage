@@ -1,11 +1,6 @@
-<script>
-export default {
-
-};
-</script>
 
 <template>
-    <div class="main-loader" v-if="!isLoading">
+    <div class="main-loader">
 		<div class="socket">
 			<div class="gel center-gel">
 				<div class="hex-brick h1"></div>

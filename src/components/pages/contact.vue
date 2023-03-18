@@ -1,4 +1,7 @@
 <template>
+      <Transition name="fade">
+    <loader v-if="isLoading"/>
+  </Transition>
     <div class="w-full min-h-[100vh] bg-[#0c0f16]">
        <navbar/>
        <section class="h-[80vh] max-[380px]:h-[90vh] fixed top-0 left-0 w-full bg-[#0c0f16]">
@@ -6,10 +9,10 @@
                 <p class="text-[#0c0f16] big-text ">Contact</p>
                 <div class="absolute top-[-4em] max-[680px]:w-[510px] max-[530px]:w-auto max-[680px]:mx-8 max-[300px]:text-center">
                       <div v-motion-pop :delay="300" class="text-[60px] tracking-[2px] Barlow_Condensed font-semibold leading-[6rem] text-white max-[680px]:text-[40px] max-[680px]:leading-[3rem] max-[300px]:mb-[5px]">
-                      <p v-motion-pop :delay="600" class="text-[20px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let's</p>
-                      TALK ABOUT YOUR PROJECT.
+                      <p v-motion-pop :delay="600" class="text-[20px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Počnimo</p>
+                      RAZGOVARATI O VAŠEM PROJEKTU 
                     </div>
-                    <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Feel free to ask me any question or let's do to talk about our future collaboration.</p>
+                    <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Osjećajte se slobodno pitati me bilo koje pitanje i razgovarati o našoj budućoj suradnji.</p>
                 </div>
             </div>
        </section>
@@ -37,7 +40,7 @@
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
                 <div class="inline-flex my-4">
-                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]" style="">
+                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]" v-model="checked">
                   <p class="text-[#999] ml-4">Dizajn i izrada nove web stranice</p>
                 </div>  
               <div class="inline-flex">
@@ -59,26 +62,26 @@
             </div>
             
             
-            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed mt-8">Ulog</p>
+            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed mt-8">BUDŽET <span class="text-[16px]">( +PDV )</span></p>
             <div class="flex justify-between w-[600px] max-[630px]:w-auto max-[630px]:flex-col text-white my-4">
               <div class="flex flex-col " required>
                 <div class="inline-flex my-4">
                   <input type="radio" name="money" value="Manje od 100" class="">
-                  <p class="text-[#999] ml-4">Manje od 100</p>
+                  <p class="text-[#999] ml-4">Manje od 100€</p>
                 </div>
                 <div class="inline-flex">
                   <input type="radio" name="money" value="200 do 500" class="">
-                  <p class="text-[#999] ml-4">200 do 500</p>
+                  <p class="text-[#999] ml-4">200€ do 500€</p>
                 </div>  
             </div>
             <div class="flex flex-col">
               <div class="inline-flex my-4">
                 <input type="radio" name="money" value="500 do 1000" class="">
-                <p class="text-[#999] ml-4">500 do 1000</p>
+                <p class="text-[#999] ml-4">500€ do 1000€</p>
               </div>
               <div class="inline-flex">
                 <input type="radio" name="money" value="vise od 1000" class="">
-                <p class="text-[#999] ml-4">vise od 1000</p>
+                <p class="text-[#999] ml-4">vise od 1000€</p>
               </div>
                 
             </div>
@@ -93,9 +96,11 @@
 <script setup>
   import navbar from './navbar.vue';
   import footer_page from './footer.vue'; 
+  import loader from './pageLoader.vue'
 </script>
 <script>
 import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 export default {
   data(){
@@ -105,7 +110,9 @@ export default {
       email:"",
       telefon:"",
       stranica:"",
-      poruka:""
+      poruka:"",
+      checked:"",
+      isLoading: true
     }
   },
   methods: {
@@ -119,14 +126,20 @@ export default {
             this.telefon = ""
             this.stranica = ""
             this.poruka = ""
-            alert("Message Sent Succesfully!!")
+            this.checked_none = false
+            swal("Good job!", "You clicked the button!", "success");
         }, (error) => {
             console.log('FAILED...', error.text);
         });
         
     },
 
-  }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1500);
+  } 
 }
 </script>
 <style scoped>
