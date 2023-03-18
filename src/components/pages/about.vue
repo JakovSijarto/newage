@@ -7,11 +7,11 @@
             <navbar/>
             <img src="../../assets/aboutus_hero.svg" alt="" class="h-[80vh] w-full object-cover opacity-20">
             <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[white]">
-                <h1 v-motion-pop :delay="300" class="text-[75px] max-[680px]:text-center max-[680px]:leading-[5rem]">O nama</h1>
-                <div v-motion-pop :delay="600" class="flex justify-center items-center pt-16">
+                <h1 v-motion-pop :delay="300" class="text-[75px] max-[680px]:text-center max-[680px]:leading-[5rem] max-[612px]:whitespace-nowrap max-[612px]:overflow-hidden max-[330px]:text-[55px]">O nama</h1>
+                <div v-motion-pop :delay="600" class="flex justify-center items-center pt-16 max-[330px]:pt-8">
                     <p class="text-[17px] pr-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/" tag="button">Početna</router-link></p> 
                     /
-                    <p class="text-[17px] text-[#75dab4] pl-8 transform hover:translate-y-1 transition duration-500 ease-in-out cursor-pointer">O nama</p>
+                    <p class="text-[17px] text-[#75dab4] pl-8 transform hover:translate-y-1 transition duration-500 ease-in-out cursor-pointer max-[330px]:whitespace-nowrap max-[330px]:overflow-hidden">O nama</p>
                 </div>
             </div>
         </nav>
