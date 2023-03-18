@@ -14,7 +14,7 @@
           </div>
           <div class="min-w-[30em] mr-8  max-[800px]:mx-8 max-[800px]:mb-[2em] max-[800px]:min-w-[auto]">
             <p class="text-[11px] tracking-[0.4em] pl-[8px] text-white Barlow_Condensed py-[3px] mb-[30px]" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 10%,  transparent 10%,	transparent 100%);">NEWSLETTER</p>
-            <p class="text-[12px] mb-[10px] text-[#999]">Prijavite se da biste se pretplatili na naš newsletter!</p>
+            <p class="text-[12px] mb-[10px] text-[#999]">Pretplatite se na naš newsletter!</p>
             <form action="" class="flex flex-row mb-[50px] max-[370px]:flex-col">
               <input type="email" name="" id="" class="p-[15px] w-full b-0 text-white" style="background: rgba(255, 255, 255, 0.01);">
               <button type="submit" @click="refresh_page" class="py-[15px] px-[30px] b-0 text-[#75dab4] tracking-[1px] text-[13px] max-[370px]:mt-[1em] max-[370px]:rounded-[6%] transition-footer-button" style="background: rgba(255, 255, 255, 0.02);">SUBSCRIBE</button>

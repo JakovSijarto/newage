@@ -34,7 +34,7 @@
             <p class=" Barlow_Condensed text-[1.3rem] ml-[18px] tracking-[2px]">O nama</p>
           </div>
             <p class="text-[2.5rem] leading-[3rem] py-4 font-bold mr-8 max-[600px]:text-center max-[600px]:text-[1.5rem] max-[600px]:mx-0">Naša misija je raditi najkvalitetnije stranice za naše klijente.</p>
-          <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">Moje ime je Jakov, iskusan sam programer sa više od 6 godina iskustva u industriji. Sa snažnim znanjem u raznim područjima web developmenta, uključujući frontend i backend programiranje, UX/UI dizajn, stekao sam reputaciju kao stručnjak za kreiranje visoko kvalitetnih i funkcionalnih web rješenja za svoje klijente. </p>
+          <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">Zovem se Jakov, iskusan sam programer s više od 6 godina iskustva u industriji. Sa snažnim znanjem u raznim područjima web developmenta, uključujući frontend i backend programiranje, UX/UI dizajna, stekao sam reputaciju kao stručnjak za kreiranje visoko kvalitetnih i funkcionalnih web rješenja za svoje klijente. </p>
         <div class="max-[600px]:text-center"><router-link to="/contact" tag="button"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">JAVITE SE</button></router-link></div>
         </div>
       <div class="flex justify-center items-center w-full" v-motion-pop :delay="300">
@@ -58,7 +58,7 @@
           <div class="p-[60px] flex justify-center items-center flex-col max-[1250px]:p-[0px] max-[1250px]:px-[20px]">
             <img src="../../assets/web_development_icon.svg" alt="" class="w-[51px] h-[50px] mb-[35px] max-[370px]:mb-[20px]">
             <p class="bold_text text-white mb-[15px] tracking-[0.1rem] text-[24px] font-bold text-center leading-[2rem]">Web Development</p>
-            <p class="text-[15px] text-[#C8C8C8] text-center leading-[1.8rem]">Web development je proces kreiranja i održavanja web stranica korištenjem programskih jezik.</p>
+            <p class="text-[15px] text-[#C8C8C8] text-center leading-[1.8rem]">Web development je proces kreiranja i održavanja web stranica korištenjem programskih jezika.</p>
           </div>
         </div>
         <div v-motion-pop-visible class="max-w-[350px] h-[330px] bg-[#151921] flex justify-center items-center flex-col relative z-[2] mx-16 max-[1250px]:max-w-[250px] max-[1250px]:h-[380px] max-[810px]:max-w-[800px] max-[810px]:max-h-[300px] max-[810px]:mb-[50px] max-[600px]:max-w-[350px] max-[370px]:max-w-[200px] hover:bg-[#21242B] hover:bg-[#21242B] hover:transition hover:ease-in-out hover:delay-10 transition ease-in-out delay-30  ">
@@ -202,7 +202,7 @@
     mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 1500);
+    }, 800);
   } 
   }
 

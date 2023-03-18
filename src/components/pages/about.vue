@@ -19,7 +19,7 @@
             <div class="flex items-center w-[1200px] justify-between flex-col py-[120px] max-[950px]:pb-[0] max-[330px]:w-auto">
                 <div class="flex justify-between w-[1200px] max-[1250px]:w-auto max-[600px]:flex-col max-[330px]:w-auto max-[330px]:px-[5px] max-[330px]:text-center"> 
                     <p v-motion-slide-left class="text-[30px] font-bold text-[white] max-[1250px]:pr-8 max-[950px]:pr-0">Tko smo mi?</p>
-                    <p v-motion-slide-right class="text-[#C8C8C8] text-[15px] font-light flex max-w-[700px] max-[1250px]:pl-8 max-[950px]:max-w-[500px] max-[730px]:max-w-[300px] max-[600px]:pl-0 max-[600px]:pt-8 max-[330px]:w-auto max-[330px]:text-center">NewAge je specijalizirana firma koja se bavi kreiranjem i razvojem web sajtova i aplikacija. Mi smo fokusirani na pružanje kvalitetnih usluga u kreiranju web sajtova, optimizaciji, održavanju i podršci nakon lansiranja sajta. Radimo sa klijentima iz različitih industrija i sektora, od malih preduzeća do velikih korporacija.</p>
+                    <p v-motion-slide-right class="text-[#C8C8C8] text-[15px] font-light flex max-w-[700px] max-[1250px]:pl-8 max-[950px]:max-w-[500px] max-[730px]:max-w-[300px] max-[600px]:pl-0 max-[600px]:pt-8 max-[330px]:w-auto max-[330px]:text-center">NewAge je specijalizirana tvrtka koja se bavi kreiranjem i razvojem web sajtova i aplikacija. Mi smo fokusirani na pružanje kvalitetnih usluga u kreiranju web stranica, optimizaciji, održavanju i podršci nakon lansiranja sajta. Radimo s klijentima iz različitih industrija i sektora, od malih poduzeća do velikih korporacija.</p>
                 </div>
             </div>
             <div class="flex flex-row w-[1200px] justify-between mt-[4em] mx-16 max-[1250px]:w-[900px] max-[915px]:w-[800px] max-[810px]:flex-col max-[810px]:items-center ">
@@ -48,12 +48,12 @@
         </section>
         <section class="w-full flex justify-center flex-col items-center overflow-x-hidden">
             <div  class="absolute z-20 flex justify-between items-center w-[1200px] max-[1230px]:w-[1000px] max-[1030px]:flex-col max-[1030px]:w-full ">
-                <p v-motion-slide-top :delay="600" class="text-[45px] font-bold w-[600px] text-white leading-[4rem]  mt-[-6em] max-[1030px]:mt-[-7em] max-[1030px]:mb-[2em]  max-[1030px]:ml-[-2em] max-[720px]:ml-0  max-[720px]:text-[30px]  max-[720px]:w-[500px] max-[610px]:mt-[-10em] max-[530px]:w-auto max-[530px]:mx-8">Dakle, to smo mi. Ne postoji drugi način da se to izrazi.</p>
+                <p v-motion-slide-top :delay="600" class="text-[45px] font-bold w-[600px] text-white leading-[4rem]  mt-[-6em] max-[1030px]:mt-[-7em] max-[1030px]:mb-[2em]  max-[1030px]:ml-[-2em] max-[720px]:ml-0  max-[720px]:text-[30px]  max-[720px]:w-[500px] max-[610px]:mt-[-10em] max-[530px]:w-auto max-[530px]:mx-8">Pohvalne riječi od naših klijenata.</p>
                 <div v-motion-slide-bottom class="w-[470px] h-[600px] bg-[#75dab4] py-[80px] px-[40px] max-[1030px]:w-[690px]  max-[1030px]:h-[487px] max-[720px]:w-[510px] max-[720px]:h-[600px] max-[530px]:h-[650px] max-[530px]:w-[400px] max-[415px]:w-[300px] max-[415px]:h-[880px] max-[320px]:w-[250px] max-[320px]:px-[20px] max-[320px]:py-[10px] max-[320px]:h-[750px]">
                     <p class="mb-[10px] text-[12px] font-light tracking-[4px] text-[#0c0f16]">NAŠI ZADOVOLJNI KLIJENTI</p>
                     <p class="text-[#0c0f16] text-[30px] font-bold max-[320px]:text-[25px]">Što klijenti govore?</p>
                     <div class="" >
-                        <carousel :items-to-show="1" :wrapAround="true" autoplay="2000" transition="800" :wrap-around="true">
+                        <carousel :items-to-show="1" :wrapAround="true" autoplay="7000" transition="800" :wrap-around="true">
                         <slide v-for="slide in 3" :key="slide">
                             <div>
                                 <p class="mt-[60px] max-[320px]:mt-[20px] pb-[30px] mb-[30px] text-[#333] text-[17px] leading-[2rem] text-left font-light" style="border-bottom: 1px solid rgba(0, 0, 0, 0.05);">{{ slide_content[slide] }}</p>
@@ -183,8 +183,8 @@ export default {
   data(){
     return{
         slide_content:["","Rad s tvrtkom NewAge je promijenio igru za moj posao. Njihov tim je stručan, učinkovit i uvijek dostupan za odgovaranje na pitanja. Isporučili su web stranicu koja je premašila moja očekivanja i pomogla mi da dosegnem širu publiku online."
-                        ,"Toplo preporučujem NewAge svima koji traže izradu web stranice. Kreativni su, usredotočeni na detalje i zaista se brinu o uspjehu svojih klijenata. Impresioniran sam njihovom sposobnošću da pretvore moju viziju u stvarnost i ne bih mogao biti sretniji s konačnim proizvodom."
-                        ,"NewAge je proces izgradnje web stranice učinio glatkim i bez stresa. Jasno su i redovito komunicirali tijekom projekta i uvijek su bili spremni učiniti dodatni napor kako bi osigurali moje zadovoljstvo. Ne bih oklijevao raditi s njima ponovno u budućnosti."],
+                        ,"Toplo preporučujem NewAge svima koji traže izradu web stranice. Kreativni su, usredotočeni na detalje i zaista se brinu o uspjehu svojih klijenata. Impresioniran sam njihovom sposobnošću da pretvore moju viziju u stvarnost i jako sam zadovoljan s konačnim proizvodom."
+                        ,"NewAge je proces izgradnje web stranice učinio jednostavnim i bez stresa. Jasno su i redovito komunicirali tijekom projekta i uvijek su bili spremni učiniti dodatni napor kako bi osigurali moje zadovoljstvo. Ne bih oklijevao raditi s njima ponovno u budućnosti."],
         slide_name:["","Ivan Petrović","Ana Marković","Nikola Janković"],
         slide_proffesion:["","CEO, Zagreb","Co-Founder, Varaždin","Director, Split"],
         slide_images:[""],
@@ -194,7 +194,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 1500);
+    }, 800);
   } 
 }
 </script>

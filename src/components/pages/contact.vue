@@ -36,11 +36,11 @@
             </div>
           </div>
             <input type="text" name="user_url" placeholder="Postojeća Stranica" required  v-model="stranica">
-            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Zainteresirani</p>
+            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Zainteresirani za</p>
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
                 <div class="inline-flex my-4">
-                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]" v-model="checked">
+                  <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]">
                   <p class="text-[#999] ml-4">Dizajn i izrada nove web stranice</p>
                 </div>  
               <div class="inline-flex">
@@ -117,7 +117,7 @@ export default {
   },
   methods: {
     sendEmail() {
-      emailjs.sendForm('service_ggomcme', 'template_i62uyo3', this.$refs.form, 'ti7ZWmhQJZHXoPZYv')
+      emailjs.sendForm('service_clwuk55', 'template_8k7mdkr', this.$refs.form, '6y58hytHJtD9eVBSB')
         .then((result) => {
             console.log('SUCCESS!', result.text);
             this.ime = ""
@@ -142,7 +142,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 1500);
+    }, 800);
   } 
 }
 </script>
