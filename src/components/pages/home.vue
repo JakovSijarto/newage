@@ -12,7 +12,7 @@
             <div class="max-[750px]:text-center" v-motion-roll-left :delay="400">
               <p class="text-[14px] text-[#74D5AF] tracking-[0.3rem] max-[418px]:mt-0">POZDRAV, MI SMO</p>
               <p class="text-[100px] py-[55px] text-[white] title_font  max-[750px]:w-[auto] max-[860px]:text-[80px] max-[860px]:py-[25px] max-[860px]:leading-[5rem]">NEW AGE</p>
-              <p class="text-[20px] text-[white] tracking-[0.4rem]">SMMA AGENCY</p>
+              <p class="text-[20px] text-[white] tracking-[0.4rem]">WEB DESIGN AGENCY</p>
             <ul class="flex mt-[4em] max-[750px]:justify-center">
               <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"><a href="https://www.instagram.com/newage_agency_/"><img src="../../assets/ig_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
               <li class="bg-[gray] p-[14px] rounded-full mx-2 cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"><img src="../../assets/fb_icon.svg" alt="" class="w-[24px] h-[24px]"></li>
@@ -203,6 +203,11 @@
     setTimeout(() => {
       this.isLoading = false;
     }, 800);
+    window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth',
+    });
   } 
   }
 

@@ -119,7 +119,7 @@ export default {
     sendEmail() {
       emailjs.sendForm('service_clwuk55', 'template_8k7mdkr', this.$refs.form, '6y58hytHJtD9eVBSB')
         .then((result) => {
-            console.log('SUCCESS!', result.text);
+             console.log('SUCCESS!', result.text);
             swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
 "success"}).then(function(){ 
    location.reload();
@@ -136,6 +136,10 @@ export default {
     setTimeout(() => {
       this.isLoading = false;
     }, 800);
+    window.scroll({
+  top: 0, 
+  left: 0, 
+    });
   } 
 }
 </script>
