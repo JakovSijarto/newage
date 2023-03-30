@@ -44,7 +44,7 @@
         <section class="w-full flex justify-center flex-col items-center overflow-x-hidden">
             <div  class="absolute z-20 flex justify-between items-center w-[1200px] max-[1230px]:w-[1000px] max-[1030px]:flex-col max-[1030px]:w-full ">
                 <p v-motion-slide-top :delay="600" class="text-[45px] font-bold w-[600px] text-white leading-[4rem]  mt-[-6em] max-[1030px]:mt-[-7em] max-[1030px]:mb-[2em]  max-[1030px]:ml-[-2em] max-[720px]:ml-0  max-[720px]:text-[30px]  max-[720px]:w-[500px] max-[610px]:mt-[-10em] max-[530px]:w-auto max-[530px]:mx-8">Pohvalne riječi od naših klijenata.</p>
-                <div v-motion-slide-bottom class="w-[470px] h-[600px] bg-[#75dab4] py-[80px] px-[40px] max-[1030px]:w-[690px]  max-[1030px]:h-[487px] max-[720px]:w-[510px] max-[720px]:h-[600px] max-[530px]:h-[650px] max-[530px]:w-[400px] max-[415px]:w-[300px] max-[415px]:h-[880px] max-[320px]:w-[250px] max-[320px]:px-[20px] max-[320px]:py-[10px] max-[320px]:h-[750px]">
+                <div v-motion-slide-bottom class="w-[470px] h-[600px] bg-emerald-400 py-[80px] px-[40px] max-[1030px]:w-[690px]  max-[1030px]:h-[487px] max-[720px]:w-[510px] max-[720px]:h-[600px] max-[530px]:h-[650px] max-[530px]:w-[400px] max-[415px]:w-[300px] max-[415px]:h-[880px] max-[320px]:w-[250px] max-[320px]:px-[20px] max-[320px]:py-[10px] max-[320px]:h-[750px]">
                     <p class="mb-[10px] text-[12px] font-light tracking-[4px] text-[#0c0f16]">NAŠI ZADOVOLJNI KLIJENTI</p>
                     <p class="text-[#0c0f16] text-[30px] font-bold max-[320px]:text-[25px]">Što klijenti govore?</p>
                     <div class="" >
@@ -53,7 +53,6 @@
                             <div>
                                 <p class="mt-[60px] max-[320px]:mt-[20px] pb-[30px] mb-[30px] text-[#333] text-[17px] leading-[2rem] text-left font-light" style="border-bottom: 1px solid rgba(0, 0, 0, 0.05);">{{ slide_content[slide] }}</p>
                                 <div class="flex items-center">
-                                    <img src="../../assets/businessman1.svg" alt="" class="w-[70px] h-[60px] rounded-full object-fit">
                                     <div class="text-left ml-[15px]">
                                         <p class="text-[#0c0f16] tracking-[2px] mb-[2px] uppercase font-bold">{{ slide_name[slide] }}</p>
                                         <p class="text-[#0c0f16] font-light text-[13px]">{{ slide_proffesion[slide] }}</p>
@@ -95,7 +94,7 @@
                             <p>Development</p>
                         </div>
                     </div>
-                    <div class="flex flex-row items-center" v-motion-slide-visible-right>
+                    <div class="flex flex-row items-center" v-motion-slide-right>
                         <svg class="CircularProgressbar " viewBox="0 0 120 100" data-test-id="CircularProgressbar"><path class="CircularProgressbar-trail" style="stroke:#0f1218;stroke-dasharray:307.8760800517997px 307.8760800517997px;stroke-dashoffset:0px" d="
                                 M 50,50
                                 m 0,-49
@@ -122,7 +121,7 @@
         </section>
         <section class="w-full h-[60em] flex justify-center items-center max-[1065px]:h-[100em] max-[730px]:h-[90em]">
             <div v-motion-slide-right  class="flex justify-center items-center flex-row max-[1065px]:flex-col max-[540px]:mx-8">
-                <img src="../../assets/temp_aboutus.svg" alt="" class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
+                <img src="../../assets/about_us_programming.jpg" alt="" class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
                 <div class="pl-[40px] text-white max-[1065px]:mt-[60px] max-[1065px]:flex max-[1065px]:flex-col max-[1065px]:justify-start max-[1065px]:w-[700px] max-[1065px]:pl-0 max-[730px]:w-[500px] max-[540px]:w-auto  ">
                     <p class="text-[40px] leading-[1.5rem] mb-[20px] Barlow_Condensed font-black ">O nama.</p>
                     <p class="text-[#c8c8c8] text-[15px] font-light leading-[2rem] w-[500px] max-[1065px]:w-auto">New Age je visoko kvalitetna web development agencija koja se usredotočuje na pružanje najboljih usluga izrade web stranica i web aplikacija za svoje klijente diljem svijeta.</p>
@@ -182,10 +181,11 @@ export default {
                         ,"NewAge je proces izgradnje web stranice učinio jednostavnim i bez stresa. Jasno su i redovito komunicirali tijekom projekta i uvijek su bili spremni učiniti dodatni napor kako bi osigurali moje zadovoljstvo. Ne bih oklijevao raditi s njima ponovno u budućnosti."],
         slide_name:["","Ivan Petrović","Ana Marković","Nikola Janković"],
         slide_proffesion:["","CEO, Zagreb","Co-Founder, Varaždin","Director, Split"],
-        slide_images:[""],
+        slide_images:["businessman1.svg","businessman2.svg","businessman3.svg"],
         isLoading: true
     }
   },
+  
   mounted() {
     setTimeout(() => {
       this.isLoading = false;

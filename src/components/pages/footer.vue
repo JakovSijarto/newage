@@ -5,7 +5,7 @@
           <div class="ml-8 max-[800px]:flex max-[800px]:flex-col max-[800px]:min-w-[30em] max-[800px]:mx-8 max-[800px]:my-8 max-[800px]:min-w-[368px] max-[390px]:min-w-[auto]">
             <img src="../../assets/logo.svg" alt="" class="h-[55px] w-[50px] mb-[1.5rem] ">
             <p class="font-bold text-[white] text-[12px] mb-[5px]">Email: <a href="mailto:newage@agencycroatia.com?subject=subject&cc=newage@agencycroatia.com" class="font-normal ml-[10px]">newage@agencycroatia.com</a></p> 
-            <p class="font-bold text-[white] text-[12px]">Mobitel: <a href="tel:+385917292812" class="font-normal ml-[10px]">(+385) 091 729 2812</a></p> 
+            <p class="font-bold text-[white] text-[12px]">Mobitel: <a href="tel:+385917292812" class="font-normal ml-[10px]">(+385) 91 729 2812</a></p> 
             <p class="text-[11px] tracking-[0.4em] my-8 pl-[8px] text-white Barlow_Condensed py-[3px]" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%,  transparent 20%,	transparent 100%);">PRATITE NAS</p>
             <ul class="flex ">
               <li class="p-[14px] rounded-full cursor-pointer transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer" style="background: rgba(255, 255, 255, 0.01);"><a href="https://www.instagram.com/newage_agency_/"><img src="../../assets/ig_icon.svg" alt="" class="w-[18px] h-[18px] "></a></li>

@@ -127,7 +127,7 @@
           <div class="w-full relative grid grid-cols-2 gap-4 place-content-center gap-x-[6rem] max-[800px]:gap-x-[2.5rem] max-[700px]:gap-x-[0rem] max-[700px]:grid-cols-1">
             <div class="text-center mt-[100px] max-[700px]:my-[50px] " v-if="restaurants">
               <div class="overflow-hidden"  v-motion-pop>
-              <img src="../../assets/test_photo1.svg" alt="" class="w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
+              <img src="../../assets/test_photo1.svg" alt="" class="w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
             </div>
               <p class="text-white text-[18px] font-bold pt-[2em] pb-[7px]">SteakHouse</p>
               <p class="text-[#999]">Restoran dizajn.</p>
@@ -135,21 +135,21 @@
 
             <div class="text-center max-[700px]:my-[50px] " v-if="other" >
               <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo2.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
+                <img src="../../assets/test_photo2.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
               </div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Budućnost sa robotima</p>
                 <p class="text-[#999]">AI dizajn.</p>
             </div>
             <div class="text-center mt-[50px] max-[700px]:my-[50px] " v-if="other">
               <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo3.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
+                <img src="../../assets/test_photo3.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
               </div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Istraži Astronomija</p>
                 <p class="text-[#999]">Astronomija dizajn.</p>
             </div>
             <div class="text-center max-[700px]:my-[50px] " v-if="restaurants">
               <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo4.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px] transform hover:scale-125 transition duration-500 ease-in-out ">
+                <img src="../../assets/test_photo4.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
               </div>
                 <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Talijanski Restoran</p>
                 <p class="text-[#999]">Restoran dizajn.</p>

@@ -205,7 +205,7 @@
         left:0;
         width:100vw;
         height: 100vh;
-        background-color: rgb(190, 190, 190);
+        background-color: #0c0f16;
         z-index: 999;
     }
     .socket {
@@ -219,7 +219,7 @@
 }
 
 .hex-brick {
-  background: #000000;
+  background: #74D5AF;
   width: 30px;
   height: 17px;
   position: absolute;
