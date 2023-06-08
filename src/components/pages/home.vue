@@ -76,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-[38em] bg-[#11141b] absolute mt-[30em] max-[810px]:mt-[75em] max-[370px]:h-[55em] max-[370px]:mt-[65em]"></div>
+      <div class="w-full h-[30em] bg-[#11141b] absolute mt-[22.5em] max-[810px]:mt-[75em] max-[370px]:h-[55em] max-[370px]:mt-[65em]"></div>
       <div class="relative z-2 flex flex-row mt-[10em] text-white mx-8 mb-8 max-[370px]:flex-col max-[370px]:mt-[7em]">
         <div class="flex flex-row max-[810px]:flex-col ">
           <div class="flex flex-col text-center border-r-[0.6px] border-white/[.05] max-[370px]:border-0 justify-center items-center pr-16  max-[810px]:px-8 max-[810px]:mb-16 max-[810px]:w-[300px] max-[600px]:w-[200px]">
@@ -110,61 +110,34 @@
         <div class="flex flex-col text-left mx-16 max-[1200px]:text-center max-[400px]:items-center">
         <p class="text-[16px] text-[#74D5AF] tracking-[0.7rem] pb-8  ">PORTFOLIO</p>
         <h2 class="text-[80px]  naslov_sec2 mt-[25px] max-[400px]:leading-[4rem] max-[400px]:mt-0">NAŠI RADOVI</h2>
-        <div class="mt-32 text-white font-bold max-w-[400px] background-custom rounded-full flex justify-center max-[1200px]:mt-16 max-[400px]:flex-col max-[400px]:rounded-[10%]  max-[400px]:max-w-[214px]">
-          <button class="tracking-[0.1rem]" @click="all">All</button>
-          <span class="absolute bg-[#74D5AF] w-[8px] h-[8px] rounded-full mt-[8px] ml-[7.5em] max-[400px]:mt-[-3.6em] max-[400px]:ml-[2.5em] max-[400px]:w-[15px]  max-[400px]:h-[3px]  max-[400px]:rounded-full"></span>
-          <button class="mx-16 tracking-[0.1rem] max-[400px]:mx-0  max-[400px]:my-8 relative z-999" @click="restaurants_pics">Restorani</button>
-          <span class="absolute bg-[#74D5AF] w-[8px] h-[8px] rounded-full mt-[8px] ml-[-12em]  max-[400px]:ml-[2.5em]  max-[400px]:mt-[3.3em] max-[400px]:w-[15px]  max-[400px]:h-[3px]  max-[400px]:rounded-full"></span>
-          <button class="tracking-[0.1rem]" @click="other_pics">Ostalo</button>
-        </div>
       </div>
         <div class="max-[1200px]:absolute ">
           <p class="text-[#0c0f16] big-text ">Portfolio</p>    
         </div>
       </div>
-
-      <div class="grid place-content-center mt-16 mx-8  overflow-hidden" >
-          <div class="w-full relative grid grid-cols-2 gap-4 place-content-center gap-x-[6rem] max-[800px]:gap-x-[2.5rem] max-[700px]:gap-x-[0rem] max-[700px]:grid-cols-1">
-            <div class="text-center mt-[100px] max-[700px]:my-[50px] " v-if="restaurants">
-              <div class="overflow-hidden"  v-motion-pop>
-              <img src="../../assets/test_photo1.svg" alt="" class="w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
-            </div>
-              <p class="text-white text-[18px] font-bold pt-[2em] pb-[7px]">SteakHouse</p>
-              <p class="text-[#999]">Restoran dizajn.</p>
-            </div>
-
-            <div class="text-center max-[700px]:my-[50px] " v-if="other" >
-              <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo2.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
-              </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Budućnost sa robotima</p>
-                <p class="text-[#999]">AI dizajn.</p>
-            </div>
-            <div class="text-center mt-[50px] max-[700px]:my-[50px] " v-if="other">
-              <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo3.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
-              </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Istraži Astronomija</p>
-                <p class="text-[#999]">Astronomija dizajn.</p>
-            </div>
-            <div class="text-center max-[700px]:my-[50px] " v-if="restaurants">
-              <div class="overflow-hidden" v-motion-pop>
-                <img src="../../assets/test_photo4.svg" alt="" class=" w-[500px] h-[600px] object-cover max-[900px]:h-[333px] max-[700px]:w-[440px] max-[700px]:h-[560px]">
-              </div>
-                <p class="text-white text-[18px] font-bold pt-8 pb-[7px]">Talijanski Restoran</p>
-                <p class="text-[#999]">Restoran dizajn.</p>
-            </div>
-          </div>
+      <div class="flex justify-center items-center max-[520px]:flex-col">
+        <div class="text-center mt-16">
+          <img src="../../assets/aboutus_home_canisart.png" alt="">
+          <p class="text-white text-[1.5rem] font-bold">Canis Art</p>
+          <router-link to="/about" tag="button"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button ">Saznajte Više</button></router-link>
+        </div>
+        <div class="text-center mt-16">
+          <img src="../../assets/aboutus_home_tenisiceonline.png" alt="">
+          <p class="text-white text-[1.5rem] font-bold">Tenisice Online</p>
+          <router-link to="/about" tag="button"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></router-link>
+        </div>
+        
       </div>
+      
     </section>
-    <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden" >
+    <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden mt-[0]" >
       <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
       <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
         <div v-motion-slide-left>
         <p class="text-[#74D5AF] tracking-[0.3rem] mb-[30px] contact_text_font1 max-[400px]:text-[50vw] uppercase">Počnimo</p>
         <p class=" bold_text text-[transparent] font-bold  max-[1220px]:leading-[3rem] max-[460px]:text-[10px] contact_text_font2 max-[400px]:leading-[2rem]" style="-webkit-text-stroke: 1px white; ">RAZGOVARATI <span class="  naslov_sec2 bold_text !tracking-[-2px] max-[400px]:!tracking-[2px]" style="text-shadow:none;">O VAŠEM PROJEKTU</span>.</p>
       </div>
-      <button v-motion-slide-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem]  px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()"><router-link to="/contact" tag="button">Javite Nam Se!</router-link></button>
+      <router-link to="/contact" tag="button"><button v-motion-slide-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem]  px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()">Javite Nam Se!</button></router-link>
       </div>
     </section>
     <footer_page />
@@ -180,24 +153,10 @@
  export default{
     data(){
       return{
-        restaurants:true,
-        other:true,
         isLoading: true
     };
   },
     methods: {
-      all(){
-        this.restaurants = true
-        this.other = true
-      },
-      other_pics(){
-        this.restaurants = false
-        this.other = true
-      },
-      restaurants_pics(){
-        this.restaurants = true
-        this.other = false
-      }
     },
     mounted() {
     setTimeout(() => {

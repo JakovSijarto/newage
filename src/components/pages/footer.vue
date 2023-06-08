@@ -23,7 +23,7 @@
             <p class="text-[11px] tracking-[0.4em] pl-[8px] text-white Barlow_Condensed py-[3px] mb-[30px] " style="background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 13%,  transparent 13%,	transparent 100%);">INSTAGRAM POST</p>
             <ul class="flex">
               <li><img src="../../assets/instagram_post1.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full border-1 border-[white] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
-              <li><img src="../../assets/instagram_post2.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full mx-[5px] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
+              <li class="mx-[9px]"><img src="../../assets/instagram_post2.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full  transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
               <li><img src="../../assets/instagram_post3.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
             </ul>
           </div>

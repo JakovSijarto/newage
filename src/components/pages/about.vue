@@ -181,7 +181,6 @@ export default {
                         ,"NewAge je proces izgradnje web stranice učinio jednostavnim i bez stresa. Jasno su i redovito komunicirali tijekom projekta i uvijek su bili spremni učiniti dodatni napor kako bi osigurali moje zadovoljstvo. Ne bih oklijevao raditi s njima ponovno u budućnosti."],
         slide_name:["","Ivan Petrović","Ana Marković","Nikola Janković"],
         slide_proffesion:["","CEO, Zagreb","Co-Founder, Varaždin","Director, Split"],
-        slide_images:["businessman1.svg","businessman2.svg","businessman3.svg"],
         isLoading: true
     }
   },
