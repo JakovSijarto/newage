@@ -115,18 +115,22 @@
           <p class="text-[#0c0f16] big-text ">Portfolio</p>    
         </div>
       </div>
-      <div class="flex justify-center items-center max-[520px]:flex-col">
-        <div class="text-center mt-16">
+      <div class="w-full flex justify-center items-center max-[900px]:flex-col">
+          <div class="text-center mt-16">
           <img src="../../assets/aboutus_home_canisart.png" alt="">
           <p class="text-white text-[1.5rem] font-bold">Canis Art</p>
-          <router-link to="/about" tag="button"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button ">Saznajte Više</button></router-link>
+          <a href="https://main--exquisite-gelato-0b2f5f.netlify.app/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button ">Saznajte Više</button></a>
         </div>
         <div class="text-center mt-16">
           <img src="../../assets/aboutus_home_tenisiceonline.png" alt="">
           <p class="text-white text-[1.5rem] font-bold">Tenisice Online</p>
-          <router-link to="/about" tag="button"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></router-link>
+          <a href="https://fanciful-paprenjak-63e2b3.netlify.app" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
         </div>
-        
+        <div class="text-center mt-16">
+          <img src="../../assets/apsopic.jpeg" alt="">
+          <p class="text-white text-[1.5rem] font-bold">Ap Sopic</p>
+          <a href="https://jolly-dragon-56eadd.netlify.app/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
+        </div>
       </div>
       
     </section>
