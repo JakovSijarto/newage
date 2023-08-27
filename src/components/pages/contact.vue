@@ -9,22 +9,22 @@
                 <p class="text-[#0c0f16] big-text ">Contact</p>
                 <div class="absolute top-[-4em] max-[680px]:w-[510px] max-[530px]:w-auto max-[680px]:mx-8 max-[300px]:text-center">
                       <div v-motion-pop :delay="300" class="text-[60px] tracking-[2px] Barlow_Condensed font-semibold leading-[6rem] text-white max-[680px]:text-[40px] max-[680px]:leading-[3rem] max-[300px]:mb-[5px]">
-                      <p v-motion-pop :delay="600" class="text-[35px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Počnimo</p>
-                      RAZGOVARATI O VAŠEM PROJEKTU 
+                      <p v-motion-pop :delay="600" class="text-[35px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let+s</p>
+                      TALK ABOUT YOUR PROJECT
                     </div>
-                    <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Osjećajte se slobodno pitati me bilo koje pitanje i razgovarati o našoj budućoj suradnji.</p>
+                    <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Please feel free to ask me any questions and to discuss our future development.</p>
                 </div>
             </div>
        </section>
        <section class="h-[70em] bg-[#0c0f16] w-full relative z-3 mt-[70vh] flex justify-center items-start max-[630px]:h-[90em] max-[280px]:h-[100em]">
         <form ref="form" @submit.prevent="sendEmail " class="w-[1200px] mt-[10em] mx-[20px]">
-          <p class="font-bold mb-[50px] leading-[1.4rem] text-[30px] text-white">Javite nam se.</p>
+          <p class="font-bold mb-[50px] leading-[1.4rem] text-[30px] text-white">Reach Out.</p>
           <div class="flex justify-between max-[630px]:flex-col ">
             <div class="w-[49%] max-[630px]:w-full">
-              <input type="text" name="user_name" placeholder="Ime" class="" required v-model="ime">
+              <input type="text" name="user_name" placeholder="Name" class="" required v-model="ime">
             </div>
             <div class="w-[49%] max-[630px]:w-full max-[630px]:mt-[16px]">
-              <input type="text" name="user_name" placeholder="Prezime" required v-model="prezime">
+              <input type="text" name="user_name" placeholder="Surname" required v-model="prezime">
             </div>
           </div>
           <div class="flex justify-between max-[630px]:flex-col">
@@ -32,62 +32,62 @@
               <input type="email" name="user_email" placeholder="Email" required v-model="email">
             </div>
             <div class="w-[49%] max-[630px]:w-full my-[1rem] max-[630px]:mb-[16px] max-[630px]:mt-[0px]">
-              <input type="tel" name="user_tel" placeholder="Telefon" required v-model="telefon">
+              <input type="tel" name="user_tel" placeholder="Telephone" required v-model="telefon">
             </div>
           </div>
-            <input type="text" name="user_url" placeholder="Postojeća Stranica" required  v-model="stranica">
-            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Zainteresirani za</p>
+            <input type="text" name="user_url" placeholder="Website (Optional)" required  v-model="stranica">
+            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed  mt-8">Interested In</p>
             <div class="flex justify-between w-[600px] my-4 max-[630px]:w-auto  max-[630px]:flex-col  text-white">
               <div class="flex flex-col">
                 <div class="inline-flex my-4">
                   <input type="checkbox" name="zainteresirani" value="Dizajn i izrada nove web stranice" class="max-w-[20px]">
-                  <p class="text-[#999] ml-4">Dizajn i izrada nove web stranice</p>
+                  <p class="text-[#999] ml-4">Design and layout of the new website</p>
                 </div>  
               <div class="inline-flex">
                 <input type="checkbox" name="zainteresirani" value="Izrada web aplikacije" class="max-w-[20px]">
-                <p class="text-[#999] ml-4">Izrada web aplikacije</p>
+                <p class="text-[#999] ml-4">Creating a web application</p>
               </div>
             </div>
             <div class="flex flex-col">
               <div class="inline-flex my-4">
                 <input type="checkbox" name="zainteresirani" value="Redizajn postojećeg weba" class="max-w-[20px]">
-                <p class="text-[#999] ml-4">Redizajn postojećeg weba</p>
+                <p class="text-[#999] ml-4">Redesign of the current website</p>
               </div>
               <div class="inline-flex">
                 <input type="checkbox" name="zainteresirani" value="Custom rješenje" class="max-w-[20px]">
-                <p class="text-[#999] ml-4">Custom rješenje</p>
+                <p class="text-[#999] ml-4">Custom</p>
               </div>
               
             </div>
             </div>
             
             
-            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed mt-8">BUDŽET <span class="text-[16px]">( +PDV )</span></p>
+            <p class="text-white text-[24px] uppercase tracking-[3px] Barlow_Condensed mt-8">BUDGET <span class="text-[16px]">( +FEE )</span></p>
             <div class="flex justify-between w-[600px] max-[630px]:w-auto max-[630px]:flex-col text-white my-4">
               <div class="flex flex-col " required>
                 <div class="inline-flex my-4">
                   <input type="radio" name="money" value="Manje od 100" class="">
-                  <p class="text-[#999] ml-4">Manje od 100€</p>
+                  <p class="text-[#999] ml-4">Less than 100€</p>
                 </div>
                 <div class="inline-flex">
                   <input type="radio" name="money" value="200 do 500" class="">
-                  <p class="text-[#999] ml-4">200€ do 500€</p>
+                  <p class="text-[#999] ml-4">200€ - 500€</p>
                 </div>  
             </div>
             <div class="flex flex-col">
               <div class="inline-flex my-4">
                 <input type="radio" name="money" value="500 do 1000" class="">
-                <p class="text-[#999] ml-4">500€ do 1000€</p>
+                <p class="text-[#999] ml-4">500€ - 1000€</p>
               </div>
               <div class="inline-flex">
                 <input type="radio" name="money" value="vise od 1000" class="">
-                <p class="text-[#999] ml-4">vise od 1000€</p>
+                <p class="text-[#999] ml-4">More Than 1000€</p>
               </div>
                 
             </div>
             </div>
             <textarea name="message" placeholder="Message" v-model="poruka" class="mt-[30px] p-[15px] min-h-[200px] text-[white] bg-transparent max-h-[250px] mb-[1rem]" style="border: 1px solid rgba(255, 255, 255, 0.3);"></textarea>
-            <input type="submit" value="Pošalji" class="float-right h-[50px] cursor-pointer"> 
+            <input type="submit" value="Send" class="float-right h-[50px] cursor-pointer"> 
         </form>
        </section>
        <footer_page class="relative z-3"/>
