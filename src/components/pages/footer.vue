@@ -6,10 +6,8 @@
             <img src="../../assets/logo.svg" alt="" class="h-[55px] w-[50px] mb-[1.5rem] ">
             <p class="font-bold text-[white] text-[12px] mb-[5px]">Email: <a href="mailto:jakov.sijarto2@gmail.com?subject=subject&cc=jakov.sijarto2@gmail.com" class="font-normal ml-[10px]">jakov.sijarto2@gmail.com</a></p> 
             <p class="font-bold text-[white] text-[12px]">Mobitel: <a href="tel:+385917292812" class="font-normal ml-[10px]">(+385) 91 729 2812</a></p> 
-            <p class="text-[11px] tracking-[0.4em] my-8 pl-[8px] text-white Barlow_Condensed py-[3px]" style="background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 20%,  transparent 20%,	transparent 100%);">FOLLOW US</p>
-            <ul class="flex ">
-              <li class="p-[14px] rounded-full cursor-pointer transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer" style="background: rgba(255, 255, 255, 0.01);"><a href="https://www.instagram.com/newage_agency_/"><img src="../../assets/ig_icon.svg" alt="" class="w-[18px] h-[18px] "></a></li>
-              <li class="p-[14px] rounded-full mx-2 cursor-pointer transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer" style="background: rgba(255, 255, 255, 0.01);"><a href=""><img src="../../assets/fb_icon.svg" alt="" class="w-[18px] h-[18px]"></a></li>
+            <ul class="flex mt-6">
+              <li class="p-[14px] rounded-full cursor-pointer transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer mr-2" style="background: rgba(255, 255, 255, 0.01);"><a href="https://www.instagram.com/newage_agency_/"><img src="../../assets/ig_icon.svg" alt="" class="w-[18px] h-[18px] "></a></li>
               <li class="p-[14px] rounded-full cursor-pointer transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer" style="background: rgba(255, 255, 255, 0.01);"><a href="mailto:jakov.sijarto2@gmail.com?subject=subject&cc=jakov.sijarto2@gmail.com"><img src="../../assets/gmail_icon.svg" alt="" class="w-[18px] h-[18px]"></a></li>
             </ul>
           </div>
@@ -20,12 +18,7 @@
               <input type="email" name="" id="" class="p-[15px] w-full b-0 text-white" style="background: rgba(255, 255, 255, 0.01);">
               <button type="submit" @click="refresh_page" class="py-[15px] px-[30px] b-0 text-[#75dab4] tracking-[1px] text-[13px] max-[370px]:mt-[1em] max-[370px]:rounded-[6%] transition-footer-button" style="background: rgba(255, 255, 255, 0.02);">SUBSCRIBE</button>
             </form>
-            <p class="text-[11px] tracking-[0.4em] pl-[8px] text-white Barlow_Condensed py-[3px] mb-[30px] " style="background: linear-gradient(to right, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 13%,  transparent 13%,	transparent 100%);">INSTAGRAM POST</p>
-            <ul class="flex">
-              <li><img src="../../assets/instagram_post1.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full border-1 border-[white] transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
-              <li class="mx-[9px]"><img src="../../assets/instagram_post2.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full  transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
-              <li><img src="../../assets/instagram_post3.svg" alt="" class="max-w-[64px] max-h-[64px] rounded-full transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"></li>
-            </ul>
+
           </div>
         </div>
       </div>

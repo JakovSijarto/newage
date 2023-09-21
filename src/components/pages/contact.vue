@@ -9,7 +9,7 @@
                 <p class="text-[#0c0f16] big-text ">Contact</p>
                 <div class="absolute top-[-4em] max-[680px]:w-[510px] max-[530px]:w-auto max-[680px]:mx-8 max-[300px]:text-center">
                       <div v-motion-pop :delay="300" class="text-[60px] tracking-[2px] Barlow_Condensed font-semibold leading-[6rem] text-white max-[680px]:text-[40px] max-[680px]:leading-[3rem] max-[300px]:mb-[5px]">
-                      <p v-motion-pop :delay="600" class="text-[35px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let+s</p>
+                      <p v-motion-pop :delay="600" class="text-[35px] font-light Barlow_Condensed text-[#75dab4] leading-[1.4rem] ">Let's</p>
                       TALK ABOUT YOUR PROJECT
                     </div>
                     <p v-motion-pop :delay="500" class="text-[#c8c8c8] text-[15px] font-light leading-[2rem]">Please feel free to ask me any questions and to discuss our future development.</p>
