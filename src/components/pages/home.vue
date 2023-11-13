@@ -14,8 +14,8 @@
               <p class="text-[100px] py-[55px] text-[white] title_font  max-[750px]:w-[auto] max-[860px]:text-[80px] max-[860px]:py-[25px] max-[860px]:leading-[5rem]">NEW AGE</p>
               <p class="text-[20px] text-[white] tracking-[0.4rem]">WEB DESIGN AGENCY</p>
             <ul class="flex mt-[4em] max-[750px]:justify-center">
-              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer mr-2"><a href="https://www.instagram.com/newage_agency_/"><img src="../../assets/ig_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
-              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"><a href="mailto:newage@agencycroatia.com?subject=subject&cc=newage@agencycroatia.com"><img src="../../assets/gmail_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
+              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer mr-2"><a href="https://www.instagram.com/newage_development/" target="_blank"><img src="../../assets/ig_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
+              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"><a href="mailto:jakov.sijarto2@gmail.com?subject=subject&cc=jakov.sijarto2@gmail.com" target="_blank"><img src="../../assets/gmail_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
             </ul>
           </div>
         <img src="../../assets/logo.svg" class="max-[750px]:hidden" v-motion-roll-right :delay="400">
@@ -116,19 +116,19 @@
       </div>
       <div class="w-full flex justify-center items-center max-[900px]:flex-col">
           <div class="text-center mt-16">
-          <img src="../../assets/aboutus_home_canisart.png" alt="">
+          <img src="../../assets/aboutus_home_canisart.png" alt="" loading="lazy">
           <p class="text-white text-[1.5rem] font-bold">Canis Art</p>
           <a href="https://main--exquisite-gelato-0b2f5f.netlify.app/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button ">Saznajte Više</button></a>
         </div>
         <div class="text-center mt-16">
-          <img src="../../assets/aboutus_home_tenisiceonline.png" alt="">
+          <img src="../../assets/aboutus_home_tenisiceonline.png" alt="" loading="lazy">
           <p class="text-white text-[1.5rem] font-bold">Tenisice Online</p>
           <a href="https://tenisiceonline.netlify.app/#/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
         </div>
         <div class="text-center mt-16">
           <img src="../../assets/apsopic.jpeg" alt="">
-          <p class="text-white text-[1.5rem] font-bold">Ap Sopic</p>
-          <a href="https://jolly-dragon-56eadd.netlify.app/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
+          <p class="text-white text-[1.5rem] font-bold" loading="lazy">Ap Sopic</p>
+          <a href="https://apsopichr.com/#/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
         </div>
       </div>
       

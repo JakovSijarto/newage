@@ -17,7 +17,7 @@
             </div>
        </section>
        <section class="h-[70em] bg-[#0c0f16] w-full relative z-3 mt-[70vh] flex justify-center items-start max-[630px]:h-[90em] max-[280px]:h-[100em]">
-        <form ref="form" @submit.prevent="sendEmail " class="w-[1200px] mt-[10em] mx-[20px]">
+        <form ref="form" @submit.prevent="sendEmail" class="w-[1200px] mt-[10em] mx-[20px]">
           <p class="font-bold mb-[50px] leading-[1.4rem] text-[30px] text-white">Reach Out.</p>
           <div class="flex justify-between max-[630px]:flex-col ">
             <div class="w-[49%] max-[630px]:w-full">

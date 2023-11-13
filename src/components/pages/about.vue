@@ -5,7 +5,7 @@
     <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden ">
         <nav class="w-full">
             <navbar/>
-            <img src="../../assets/aboutus_hero.svg" alt="" class="h-[80vh] w-full object-cover opacity-20">
+            <img src="../../assets/aboutus_hero.svg" loading="lazy" alt="" class="h-[80vh] w-full object-cover opacity-20">
             <div class="absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[white]">
                 <h1 v-motion-pop :delay="300" class="text-[120px] max-[680px]:text-center max-[980px]:leading-[7rem] max-[980px]:whitespace-nowrap max-[980px]:overflow-hidden max-[620px]:text-[75px] max-[380px]:text-[55px]">About us</h1>
             </div>
@@ -68,7 +68,7 @@
                     
                 </div>
             </div>
-            <img src="../../assets/aboutus_testimonials.svg" alt="" class="max-h-[35em] w-full object-cover opacity-20 max-[1030px]:min-h-[1000px] max-[610px]:min-h-[950px] max-[415px]:min-h-[1300px]">
+            <img src="../../assets/aboutus_testimonials.svg" loading="lazy" alt="" class="max-h-[35em] w-full object-cover opacity-20 max-[1030px]:min-h-[1000px] max-[610px]:min-h-[950px] max-[415px]:min-h-[1300px]">
             <div class="w-full py-[50px] bg-[#11141B] ">
                 <div class="flex justify-center items-center ">
                 <div class="flex justify-start text-white w-[1200px] items-center max-[1230px]:w-[1000px] max-[1030px]:justify-center max-[1030px]:w-full max-[610px]:flex-col ">
@@ -120,7 +120,7 @@
         </section>
         <section class="w-full h-[60em] flex justify-center items-center max-[1065px]:h-[100em] max-[730px]:h-[90em]">
             <div v-motion-slide-right  class="flex justify-center items-center flex-row max-[1065px]:flex-col max-[540px]:mx-8">
-                <img src="../../assets/about_us_programming.jpg" alt="" class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
+                <img src="../../assets/about_us_programming.jpg" loading="lazy" alt="" class="w-[500px] h-[600px] pr-[15px] max-[1065px]:pr-0 max-[1065px]:mb-[60px] max-[1065px]:w-[700px] max-[1065px]:h-[800px] max-[730px]:w-[500px] max-[730px]:h-[600px] max-[540px]:w-auto max-[540px]:mb-0 max-[540px]:h-auto">
                 <div class="pl-[40px] text-white max-[1065px]:mt-[60px] max-[1065px]:flex max-[1065px]:flex-col max-[1065px]:justify-start max-[1065px]:w-[700px] max-[1065px]:pl-0 max-[730px]:w-[500px] max-[540px]:w-auto  ">
                     <p class="text-[40px] leading-[1.5rem] mb-[20px] Barlow_Condensed font-black ">About us.</p>
                     <p class="text-[#c8c8c8] text-[15px] font-light leading-[2rem] w-[500px] max-[1065px]:w-auto">New Age is a high-quality web development agency that focuses on providing the best web development and web application services to its clients around the world.</p>
@@ -142,7 +142,7 @@
             </div>
         </section>
         <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden" >
-      <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
+      <img src="../../assets/black_bg_contact.jpg" loading="lazy" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
       <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
         <div v-motion-slide-left>
         <p class="text-[#74D5AF] tracking-[0.3rem] mb-[30px] contact_text_font1 max-[400px]:text-[50vw] uppercase">Let's</p>
