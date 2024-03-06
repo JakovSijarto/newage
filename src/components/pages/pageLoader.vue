@@ -1,6 +1,17 @@
-
+<script setup>
+  import { ref, onMounted } from 'vue';
+  
+  const showLoader = ref(true);
+  
+  onMounted(() => {
+    setTimeout(() => {
+      showLoader.value = false;
+    }, 4000);
+  });
+  </script>
 <template>
-    <div class="main-loader">
+      <transition name="loader-fade" @before-enter="beforeEnter" @leave="leave">
+    <div class="main-loader" v-if="showLoader">
 		<div class="socket">
 			<div class="gel center-gel">
 				<div class="hex-brick h1"></div>
@@ -193,6 +204,7 @@
 		</div>
 	
     </div>
+  </transition>
 </template>
 
 <style scoped>
@@ -544,5 +556,10 @@
     background: #353535;
   }
 }
-
+.loader-fade-enter-active, .loader-fade-leave-active {
+  transition: opacity 0.5s;
+}
+.loader-fade-enter, .loader-fade-leave-to {
+  opacity: 0;
+}
 </style>

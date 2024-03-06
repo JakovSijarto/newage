@@ -1,7 +1,5 @@
 <template>
-      <Transition name="fade">
-    <loader v-if="isLoading"/>
-  </Transition>
+      
     <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden ">
         <nav class="w-full">
             <navbar/>
@@ -158,7 +156,7 @@
 <script setup>
     import navbar from './navbar.vue';
     import footer_page from './footer.vue';
-    import loader from './pageLoader.vue'
+    
 </script>
 
 <script>
@@ -183,16 +181,7 @@ export default {
         isLoading: true
     }
   },
-  
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 800);
-    window.scroll({
-  top: 0, 
-  left: 0, 
-    });
-  } 
+
 }
 </script>
 

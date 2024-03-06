@@ -1,7 +1,4 @@
 <template>
-      <Transition name="fade">
-    <loader v-if="isLoading"/>
-  </Transition>
     <div class="w-full min-h-[100vh] bg-[#0c0f16]">
        <navbar/>
        <section class="h-[80vh] max-[380px]:h-[90vh] fixed top-0 left-0 w-full bg-[#0c0f16]">
@@ -132,15 +129,6 @@ export default {
     },
 
   },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 800);
-    window.scroll({
-  top: 0, 
-  left: 0, 
-    });
-  } 
 }
 </script>
 <style scoped>
