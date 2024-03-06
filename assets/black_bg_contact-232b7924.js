@@ -1,0 +1,1 @@
+const s="/assets/web_development_icon-b9ec4405.svg",t="/assets/digital_marketing_icon-1aab8f79.svg",a="/assets/graphic_design_icon-b8321a7e.svg",_="/assets/black_bg_contact-bb8dd673.jpg";export{s as _,t as a,a as b,_ as c};
