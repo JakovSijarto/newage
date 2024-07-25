@@ -1,24 +1,15 @@
 <template>
-
-    <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden">
-    <div class="bg-[black] w-full ">
-      <video  class="opacity-60 h-[100vh] w-full object-cover " autoplay loop muted plays-inline>
-        <source src="../../assets/bg-video.mp4" type="video/mp4">
-      </video>
-        <div class="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex justify-center px-8">
-          <div class="flex w-[1200px] justify-between max-[750px]:justify-center">
-            <div class="max-[750px]:text-center" v-motion-roll-left :delay="400">
-              <p class="text-[14px] text-[#74D5AF] tracking-[0.3rem] max-[418px]:mt-0">HELLO, WE ARE</p>
-              <p class="text-[100px] py-[55px] text-[white] title_font  max-[750px]:w-[auto] max-[860px]:text-[80px] max-[860px]:py-[25px] max-[860px]:leading-[5rem]">NEW AGE</p>
-              <p class="text-[20px] text-[white] tracking-[0.4rem]">WEB DEV AGENCY</p>
-            <ul class="flex mt-[4em] max-[750px]:justify-center">
-              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer mr-2"><a href="https://www.instagram.com/newage_development/" target="_blank"><img src="../../assets/ig_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
-              <li class="bg-[gray] p-[14px] rounded-full cursor-pointer bg-opacity-25 transform hover:scale-125 transition duration-500 ease-in-out cursor-pointer"><a href="mailto:development@newagehr.eu" target="_blank"><img src="../../assets/gmail_icon.svg" alt="" class="w-[24px] h-[24px]"></a></li>
-            </ul>
-          </div>
-        <img src="../../assets/logo_nobg.png" class="max-[750px]:hidden" v-motion-roll-right :delay="400">
-          </div>
+    <div class="min-h-screen bg-gray-100 flex flex-col">
+    <main class="flex-grow flex items-center justify-center">
+      <div class="text-center px-4">
+        <h1 class="text-5xl md:text-6xl font-bold text-gray-800">Site Under Construction</h1>
+        <p class="mt-4 text-lg md:text-xl text-gray-600">We are working hard to bring you a better experience. Stay tuned!</p>
       </div>
+    </main>
+  </div>
+    <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden hidden">
+      <div class="bg-[black] h-[100vh] w-full ">
+      a
     </div>
     <navbar />
     <section class="w-full flex justify-center">

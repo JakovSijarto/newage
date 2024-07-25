@@ -2,7 +2,7 @@
     <div>
     <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8 max-[430px]:bg-[#11141B]">
       <div class="flex justify-between items-center w-[1200px] max-[430px]:absolute max-[430px]:w-[100%]  max-[430px]:px-8 max-[430px]:py-[1rem]" :class="{'bg-color-new':view.isActive}">
-          <li><router-link to="/" tag="button"><img src="../../assets/logo_nobg.png" class="w-[64px] "></router-link></li>
+          <li><router-link to="/" tag="button"><img src="../../assets/logo_nobg.png" class="w-[186px] "></router-link></li>
         <div class="flex justify-between items-center max-[430px]:hidden ">
           <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Home</router-link></li>
           <li class="mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About Us</router-link></li>
