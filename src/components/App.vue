@@ -1,11 +1,12 @@
 <template>
   
   <div>
+    <home/>
     <loader/>
-  <router-view/>
   </div>
 </template>
 
 <script setup>
+import home from "./pages/home.vue"
 import loader from './pages/pageLoader.vue'
 </script>
