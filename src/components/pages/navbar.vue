@@ -1,41 +1,46 @@
 <template>
     <div>
-    <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8 max-[430px]:bg-[#11141B]">
-      <div class="flex justify-between items-center w-[1200px] max-[430px]:absolute max-[430px]:w-[100%]  max-[430px]:px-8 max-[430px]:py-[1rem]" :class="{'bg-color-new':view.isActive}">
-          <li><router-link to="/" tag="button"><img src="../../assets/logo_nobg.png" class="w-[186px] "></router-link></li>
-        <div class="flex justify-between items-center max-[430px]:hidden ">
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Home</router-link></li>
-          <li class="mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About Us</router-link></li>
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Contact</router-link></li>
-        </div>
-        <ul
+    <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8  backdrop-blur-sm bg-[#fff] h-full">
+      <ul
             id="hamburger-menu"
-            :class="{ active: view.isActive,'onScroll': !view.topOfPage }"
-            class=" flex justify-center items-center flex-col text-center mt-64 min-[431px]:hidden mr-8 "
+            :class="{ active: view.isActive,'onScroll': !view.topOfPage}"
+            class=" flex justify-center items-center flex-col text-center mt-[17.6em] min-[650px]:hidden w-full absolute"
             
             v-if="view.isActive"
           >
-            <li class="min-[431px]:hidden" id="navbar_naslovnica">
+            <li class="min-[650px]:hidden" id="navbar_naslovnica">
               <router-link to="/" tag="button">Home</router-link>
             </li>
-            <li class="my-8 min-[431px]:hidden" id="navbar_naslovnica">
+            <li class="my-8 min-[650px]:hidden" id="navbar_naslovnica">
               <router-link to="/about" tag="button">About Us</router-link>
             </li>
-            <li class="min-[431px]:hidden" id="navbar_naslovnica">
+            <li class="min-[650px]:hidden" id="navbar_naslovnica">
               <router-link to="/contact" tag="button">Contact</router-link>
             </li>
           </ul>
+      <div class="flex justify-between  items-center w-[1200px]">
+        
+          <li><router-link to="/" tag="button"><img src="../../assets/logo_nobg.png" class="w-[186px] max-[470px]:w-[130px]"></router-link></li> 
+        <div class="flex justify-between w-[25%] max-[1200px]:w-auto items-center max-[650px]:hidden">
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Our work</router-link></li>
+          <li class="max-[1200px]:mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About Us</router-link></li>
+          <li class="max-[1200px]:mr-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Services</router-link></li>
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">FAQ</router-link></li>
+        </div>
+        <li class="w-[186px] max-[1200px]:hidden"><router-link to="/contact" tag="button"><div class="border flex justify-center py-2">Contact us</div></router-link></li>
+
+        
         <button
               type="button"
               id="navbar-toggle"
               aria-controls="navbar-menu"
               :class="{ active: view.isActive }"
-              class="w-[30px] h-[30px] flex justify-between items-center min-[431px]:hidden"
+              class="w-[30px] h-[30px] flex justify-between items-center min-[650px]:hidden"
               @click="showMobile"
             >
               <span
                 aria-hidden="true"
-                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[431px]:hidden z-20" 
+                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[650px]:hidden z-20" 
                 :class="{
                   'rotate-45': view.isActive,
                   ' -translate-y-1.5': !view.isActive,
@@ -43,12 +48,12 @@
               ></span>
               <span
                 aria-hidden="true"
-                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[431px]:hidden z-20"
+                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[650px]:hidden z-20"
                 :class="{ 'opacity-0': view.isActive }"
               ></span>
               <span
                 aria-hidden="true"
-                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[431px]:hidden z-20"
+                class="bg-[white] block absolute h-[3px] w-[30px] rounded transform transition duration-500 ease-in-out min-[650px]:hidden z-20"
                 :class="{
                   '-rotate-45': view.isActive,
                   ' translate-y-1.5': !view.isActive,
@@ -96,6 +101,7 @@
     height:30vh;
     transition: all 0.4s ease-in-out;
   }
+
   .active + #navbar-menu {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 1;
@@ -108,27 +114,28 @@
   .active {
     transition: all 0.4s ease-in-out;
   }
-    nav{
-      position: fixed;
-      z-index: 998;
-      top:0;
-      width: 100%;
-      height: 100px;
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .2s ease-in-out;
-  
-    }
-    .onScroll{
-      box-shadow: 0px 2px 0px 0px #181b21;
-      background-color: #11141B;
-      transition: all .2s ease-in-out;
-    }
-    .bg-color-new{
-      background-color: #11141B;
-    }
+  nav {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: transparent; /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(3px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
+}
+
+.onScroll {
+  box-shadow: 0px 2px 0px 0px #181b21;
+  background-color: rgba(17, 20, 27, 0.8); /* Semi-transparent background */
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(3px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
+}
     li {
           cursor: pointer;
           font-weight: 700;
@@ -191,9 +198,7 @@
     transform: translateX(-20px);
     opacity: 0;
   }
-  .router-link-exact-active {
-    border-bottom: 2px solid #ffffff;
-  }
+
   
   </style>
   

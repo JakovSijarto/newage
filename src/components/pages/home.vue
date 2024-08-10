@@ -1,132 +1,178 @@
 <template>
-    <div class="min-h-screen bg-gray-100 flex flex-col">
-    <main class="flex-grow flex items-center justify-center">
-      <div class="text-center px-4">
-        <h1 class="text-5xl md:text-6xl font-bold text-gray-800">Site Under Construction</h1>
-        <p class="mt-4 text-lg md:text-xl text-gray-600">We are working hard to bring you a better experience. Stay tuned!</p>
-      </div>
-    </main>
-  </div>
-    <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden hidden">
-      <div class="bg-[black] h-[100vh] w-full ">
-      a
-    </div>
-    <navbar />
-    <section class="w-full flex justify-center">
-      <div class="container flex justify-between items-center max-w-[1200px] mx-16  max-[1070px]:mx-0  max-[1070px]:flex-col max-[1070px]:w-[600px] max-[650px]:mx-16 ">
-        <div class="flex flex-col text-white mt-32 max-[1070px]:mt-[4em] w-full" v-motion-slide-visible-left :delay="300">
-          <div class="flex  max-[600px]:justify-center">
-            <span class="absolute bg-[#74D5AF] w-[4px] h-[4px] rounded-full mt-[14px] max-[600px]:ml-[-87px]"></span>
-            <span class="absolute bg-[#74D5AF] w-[4px] h-[4px] rounded-full ml-[6px] mt-[14px] max-[600px]:ml-[-75px]"></span>
-            <span class="absolute bg-[#74D5AF] w-[4px] h-[4px] rounded-full ml-[6px] mt-[8px] max-[600px]:ml-[-75px]"></span>
-            <p class=" Barlow_Condensed text-[1.3rem] ml-[18px] tracking-[2px]">About Us</p>
-          </div>
-            <p class="text-[2.5rem] leading-[3rem] py-4 font-bold mr-8 max-[600px]:text-center max-[600px]:text-[1.5rem] max-[600px]:mx-0">Our mission is to create the highest quality pages for our clients.</p>
-          <p class="text-[#C8C8C8] leading-[2rem] mr-8 max-[600px]:text-center  max-[600px]:text-[12px] max-[600px]:mx-[1rem]">My name is Jakov, I am an experienced programmer with more than 6 years of experience in the industry. With a strong knowledge in various areas of web development, including frontend and backend programming, UX/UI design, I've gained a reputation as an expert in creating high quality and functional web solutions for my clients. </p>
-        <div class="max-[600px]:text-center"><router-link to="/contact" tag="button"><button class="text-[14px] tracking-[0.3em] mt-8 bg-[#181B22] py-[6px] half-background pl-[10px]  max-[600px]:py-[2px] ">REACH OUT</button></router-link></div>
-        </div>
-      <div class="flex justify-center items-center w-full" v-motion-pop :delay="300">
-        <div class="flex mt-32 flex-col text-white w-[640px] max-[1150px]:w-[530px] max-[1150px]:mt-16 max-[1150px]:mr-8 max-[600px]:w-[300px] max-[600px]:mr-0  max-[320px]:w-[200px]" >
-              <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">FRONT-END</p>
-            <div class="relative bg-[white] bg-opacity-[0.05] h-[7px] mb-[80px]"><div class="w-[90%] bg-[#74D5AF] h-full absolute opacity-1 tooltip" data-value="90%"></div></div>
-              <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">UI / UX DESIGN</p>
-            <div class="relative bg-[white] bg-opacity-[0.05] h-[7px] mb-[80px]"><div class="w-[80%] max-[320px]:w-[85%] bg-[#74D5AF] h-full absolute opacity-1 tooltip" data-value="80%"></div></div>
-              <p class="Barlow_Condensed text-[13px] pb-[4px] tracking-[2px]">BACK-END</p>
-            <div class="relative bg-[white] bg-opacity-[0.05] h-[7px]"><div class="w-[88%] bg-[#74D5AF] h-full absolute opacity-1 tooltip" data-value="88%"></div></div>
-        </div>
-      </div>
-      </div>
-    </section>
+    <div class="min-h-[100vh] bg-[#0c0f16] overflow-y-hidden ">
 
-    <section class="flex w-full justify-center mt-[10rem] flex-col items-center  overflow-x-hidden">
-      <p class="text-[16px] text-[#74D5AF] tracking-[0.7rem] text-center mx-8 uppercase">best features</p>
-      <h1 class="text-[100px] py-[0.5em] naslov_sec2 mt-[25px] max-[400px]:text-[60px]">SERVICES.</h1>
-      <div class="flex flex-row w-[1200px] justify-between mt-[4em] mx-16 max-[1250px]:w-[900px] max-[915px]:w-[800px] max-[810px]:flex-col max-[810px]:items-center ">
-        <div v-motion-slide-visible-left class="max-w-[350px] h-[330px] bg-[#151921] flex justify-center items-center flex-col relative z-[2] max-[1250px]:max-w-[250px] max-[1250px]:h-[380px] max-[810px]:max-w-[800px] max-[810px]:max-h-[300px] max-[810px]:mb-[50px] max-[600px]:max-w-[350px] max-[370px]:max-w-[200px] hover:bg-[#21242B] hover:bg-[#21242B] hover:transition hover:ease-in-out hover:delay-10 transition ease-in-out delay-30">
-          <div class="p-[60px] flex justify-center items-center flex-col max-[1250px]:p-[0px] max-[1250px]:px-[20px]">
-            <img src="../../assets/web_development_icon.svg" alt="" class="w-[51px] h-[50px] mb-[35px] max-[370px]:mb-[20px]">
-            <p class="bold_text text-white mb-[15px] tracking-[0.1rem] text-[24px] font-bold text-center leading-[2rem]">Web Development</p>
-            <p class="text-[15px] text-[#C8C8C8] text-center leading-[1.8rem]">Web development is the process of creating and maintaining web pages using programming languages.</p>
-          </div>
+      <div class="h-[100vh] relative">
+    <video autoplay muted loop id="bg-video" class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="../../assets/bg-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay-content flex justify-center items-center w-[50%] h-full px-8">
+      <!-- Logo on the left -->
+      <ul class="absolute h-[200px] bg-transparent shadow-custom">
+    <li class="text-[5rem] leading-[1.5rem] mb-[20px] text-white text-outline font-semibold">NEW AGE</li>
+    <li class="pt-5 pb-8 text-white" >where the magic happens.</li>
+    <li class="text-white border py-2 px-4 flex flex-row items-center w-[180px] rounded-r-[40px]">Talk to us <span class="pl-2"><img src="../../assets/contactphone.svg" alt="" class="w-[32px] h-[32px]"></span></li>
+</ul>
+    </div>
+  </div>
+  <navbar />   
+<div class="text-center text-white">
+  <p class="text-[4rem] leading-[1.5rem] Barlow_Condensed pt-20 pb-8 font-bold">Our Work</p>
+  <p class="">People who have new-age website are always up-to-date</p>
+  <div class="h-full flex flex-col justify-start items-center w-full pt-24">
+    <ul class="flex flex-row w-[1200px]">
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
+        <img src="../../assets/fo4a.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          Fo4a.eu
+          <img src="../../assets/click.svg" alt="" class="w-[24px] h-[24px] ml-3">
         </div>
-        <div v-motion-pop-visible class="max-w-[350px] h-[330px] bg-[#151921] flex justify-center items-center flex-col relative z-[2] mx-16 max-[1250px]:max-w-[250px] max-[1250px]:h-[380px] max-[810px]:max-w-[800px] max-[810px]:max-h-[300px] max-[810px]:mb-[50px] max-[600px]:max-w-[350px] max-[370px]:max-w-[200px] hover:bg-[#21242B] hover:bg-[#21242B] hover:transition hover:ease-in-out hover:delay-10 transition ease-in-out delay-30  ">
-          <div class="p-[60px] flex justify-center items-center flex-col max-[1250px]:p-[0px] max-[1250px]:px-[20px]">
-            <img src="../../assets/digital_marketing_icon.svg" alt="" class="w-[51px] h-[50px] mb-[40px] max-[370px]:mb-[20px]">
-            <p class="bold_text text-white mb-[15px] tracking-[0.1rem] text-[24px] font-bold text-center leading-[2rem]">Digital Marketing</p>
-            <p class="text-[15px] text-[#C8C8C8] text-center leading-[1.8rem]">Digital marketing is the use of digital channels to promote a product/service.</p>
-          </div>
+      </li>
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center mx-12 blur-effect">
+        <img src="../../assets/canisart.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          CanisArt.com
+          <img src="../../assets/click.svg" alt="" class="w-[24px] h-[24px] ml-3">
         </div>
-        <div v-motion-slide-visible-right class="max-w-[350px] h-[330px] bg-[#151921] flex justify-center items-center flex-col relative z-[2] max-[1250px]:max-w-[250px] max-[1250px]:h-[380px] max-[810px]:max-w-[800px] max-[810px]:max-h-[300px] max-[600px]:max-w-[350px] max-[370px]:max-w-[200px] hover:bg-[#21242B] hover:transition hover:ease-in-out hover:delay-10 transition ease-in-out delay-30  " >
-          <div class="p-[60px] flex justify-center items-center flex-col max-[1250px]:p-[0px] max-[1250px]:px-[20px]">
-            <img src="../../assets/graphic_design_icon.svg" alt="" class="w-[51px] h-[50px] mb-[40px] max-[370px]:mb-[20px]">
-            <p class="bold_text text-white tracking-[0.1rem] mb-[20px] text-[24px] font-bold text-center">Graphic Design</p>
-            <span class="text-[15px] text-[#C8C8C8] text-center leading-[1.8rem]">Graphic design is the process of creating visual solutions to communicate ideas.</span>
-          </div>
+      </li>
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
+        <img src="../../assets/apsopic.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          APSopic.com 
+          <img src="../../assets/click.svg" alt="" class="w-[24px] h-[24px] ml-3">
         </div>
+      </li>
+    </ul>
+    <ul class="flex flex-row justify-between w-[1200px] gap-12 py-12 ">
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
+        <img src="../../assets/cleaning-club.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          CleaningClub.com
+          <img src="../../assets/click.svg" alt="" class="w-[24px] h-[24px] ml-3">
+        </div>
+      </li>
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
+        <img src="../../assets/pizzerija.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          Pizzeria <span class="text-[10px] pl-2">(template)</span>
+        </div>
+      </li>
+      <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
+        <img src="../../assets/Putnička agencija.png" class="h-[100%] object-cover" alt="">
+        <div class="flex flex-row py-4">
+          Travel agency <span class="text-[10px] pl-2">(template)</span>
+        </div>
+      </li>
+    </ul>
+</div>
+</div>
+
+<div class="mt-24 text-white text-center flex flex-col items-center  bg-[#0a0d13]">
+  <p class="pt-20 mb-6 border-b border-[#74D5AF]">about us</p>
+  <p class="text-[4rem] leading-[1.5rem] Barlow_Condensed pb-4 font-bold">Our Story</p>
+  <div class="flex items-center justify-center gap-[7em] py-16">
+      <img src="../../assets/aboutusglobe.png" alt="" class="w-[300px]">
+  <p class="text-left text-[14px] w-[500px]">
+      Hi there, I'm Filip, a passionate Web Designer and Developer from Serbia. My super trio when it comes to building websites are Figma, Webflow and Shopify. Together, let's bring your dream website to life – a website/store that trdivy embodies your brand, expanding your reach and driving conversions. With a focus on client satisfaction, I'll leverage my knowledge to ensure your success. Grow your online presence with a stunning, functional, and unique website tailored to your goals. Partner with me today and let's work together towards your business growth!
+      <br>
+      <button class="mt-8 border py-2 px-6">CONTACT US</button>
+    </p>
+    
+  </div>
+</div>
+
+<div class="pt-18 text-white text-center flex flex-col items-center">
+  <p class="pt-20 mb-6 border-b border-[#74D5AF]">services</p>
+  <p class="text-[4rem] leading-[1.5rem] Barlow_Condensed pb-8 font-bold">What we do</p>
+  <div class="flex items-center justify-center gap-[7em] w-[1000px] py-16">
+    <div class="border w-[50%] h-[500px] relative pl-8 text-left pt-8">
+      <div class="absolute bottom-0 right-0 flex p-2">
+        <img src="../../assets/vueicon.svg" alt="" class="w-12 h-12">
+        <img src="../../assets/tailwind.svg" alt="" class="w-12 h-12">
       </div>
-      <div class="w-full h-[30em] bg-[#11141b] absolute mt-[22.5em] max-[810px]:mt-[75em] max-[370px]:h-[55em] max-[370px]:mt-[65em]"></div>
-      <div class="relative z-2 flex flex-row mt-[10em] text-white mx-8 mb-8 max-[370px]:flex-col max-[370px]:mt-[7em]">
-        <div class="flex flex-row max-[810px]:flex-col ">
-          <div class="flex flex-col text-center border-r-[0.6px] border-white/[.05] max-[370px]:border-0 justify-center items-center pr-16  max-[810px]:px-8 max-[810px]:mb-16 max-[810px]:w-[300px] max-[600px]:w-[200px]">
-                <img src="../../assets/happy_clients_icon.svg" alt="" class="w-[70px] h-[70px] absolute opacity-[.05]">
-                <p class="Barlow_Condensed text-[35px] pb-8 tracking-[2px]">10+</p>
-                <p class="text-[15px] ">Happy Clients</p>
-            </div>
-            <div class="flex flex-col text-center border-r-[0.6px] border-white/[.05] max-[370px]:border-0 justify-center items-center px-16 max-[810px]:px-8 max-[810px]:w-[300px] max-[600px]:w-[200px] max-[370px]:mb-16">
-              <img src="../../assets/projects_made_icon.svg" alt="" class="w-[100px] h-[100px] absolute opacity-[.05]">
-                <p class="Barlow_Condensed text-[35px] pb-8 tracking-[2px]">20+</p>
-                <p class="text-[15px]">Finished Projects</p>
-            </div>
-        </div>
-            <div class="flex flex-row max-[810px]:flex-col">
-              <div class="flex flex-col text-center border-r-[0.6px] border-white/[.05] justify-center items-center px-16 max-[810px]:px-8 max-[810px]:border-0 max-[810px]:mb-16 max-[810px]:w-[300px] max-[600px]:w-[200px] max-[600px]:mb-[3.4em]">
-              <img src="../../assets/programming_languages_icon.svg" alt="" class="w-[70px] h-[70px] absolute opacity-[.05]">
-                <p class="Barlow_Condensed text-[35px] pb-8 max-[600px]:pb-[20px] tracking-[2px]">4+</p>
-                <p class="text-[15px]">Programming Languages</p>
-            </div>
-            <div class="flex flex-col text-center justify-center items-center pl-16 max-[810px]:px-8 max-[810px]:w-[300px] max-[600px]:w-[200px]">
-              <img src="../../assets/years_of_experience_icon.svg" alt="" class="w-[70px] h-[70px] absolute opacity-[.05]">
-                <p class="Barlow_Condensed text-[35px] pb-8 tracking-[2px]">6+</p>
-                <p class="text-[15px]">Years of Experience</p>
-            </div>
-           </div>
-            
+      <div class="flex flex-row items-center">
+        <img src="../../assets/websitecreation.svg" alt="">
+        <p class="text-[23px] pl-4 font-bold">Web Development</p>
       </div>
-    </section>
-    <section class="w-full overflow-x-hidden pb-32 max-[700px]:pb-8">
-      <div class="pt-64 text-center flex justify-center gap-[2em]">
-        <div class="flex flex-col text-left mx-16 max-[1200px]:text-center max-[400px]:items-center">
-        <p class="text-[16px] text-[#74D5AF] tracking-[0.7rem] pb-8  ">PORTFOLIO</p>
-        <h2 class="text-[80px]  naslov_sec2 mt-[25px] max-[400px]:leading-[4rem] max-[400px]:mt-0">OUR WORKS</h2>
+      <ul class="text-[20px]">
+        <li class="pt-6 text-[16px] pb-2">Features:</li>
+        <li class="flex items-center gap-2"><img src="../../assets/star.svg" alt="" class="w-8 h-8">On page SEO</li>
+        <li class="flex items-center gap-2 py-4"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Web-Shop</li>
+        <li class="flex items-center gap-2 pb-4"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Hosting</li>
+        <li class="flex items-center gap-2"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Responsive design</li>
+      </ul>
+    </div>
+    <div class="border w-[50%] h-[500px] relative pl-8 text-left pt-8">
+      <div class="absolute bottom-0 right-0 flex p-2">
+        <img src="../../assets/vf.png" alt="" class="h-12">
       </div>
-        <div class="max-[1200px]:absolute ">
-          <p class="text-[#0c0f16] big-text ">Portfolio</p>    
-        </div>
+      <div class="flex flex-row items-center">
+        <img src="../../assets/ailogo.svg" alt="">
+        <p class="text-[23px] pl-4 font-bold">AI Automation</p>
       </div>
-      <div class="w-full flex justify-center items-center max-[900px]:flex-col">
-          <div class="text-center mt-16">
-          <img src="../../assets/aboutus_home_canisart.png" alt="" loading="lazy">
-          <p class="text-white text-[1.5rem] font-bold">Canis Art</p>
-          <a href="https://main--exquisite-gelato-0b2f5f.netlify.app/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button ">Saznajte Više</button></a>
-        </div>
-        <div class="text-center mt-16">
-          <img src="../../assets/apsopic.jpeg" alt="">
-          <p class="text-white text-[1.5rem] font-bold" loading="lazy">Ap Sopic</p>
-          <a href="https://apsopichr.com/#/" target="_blank"><button class="mt-8 text-white border py-[6px] px-[20px] animation-contact-button">Saznajte Više</button></a>
-        </div>
+      <ul class="text-[20px]">
+        <li class="pt-6 text-[16px] pb-2">Features:</li>
+        <li class="flex items-center gap-2"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Lead Capture & CRM Integration</li>
+        <li class="flex items-center gap-2 py-4"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Support Ticket Management</li>
+        <li class="flex items-center gap-2 pb-4"><img src="../../assets/star.svg" alt="" class="w-8 h-8">Appointment Setting Build</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bg-[#0a0d13] text-center flex flex-col items-center text-white pb-24">
+  <p class="pt-20 mb-8 border-b border-[#74D5AF] w-[100px]">contact us</p>
+  <p class="text-[4rem] leading-[1.5rem] Barlow_Condensed pb-8 font-bold">Get In Touch</p>
+  <p class="text-[14px] pb-12">If you have any type of questions or concerns feel free to reach out, there is no stupid questions :)</p>
+  <div class=" mx-auto p-6 border shadow-md w-[1200px] flex justify-center">
+    <form @submit.prevent="handleSubmit" class="w-full flex flex-col items-center py-12">
+      <div class="flex w-[80%] gap-12 justify-between">
+        <div class="mb-4 text-left w-full">
+        <label for="name" class="block text-[20px] pb-2 text-white">Name</label>
+        <input type="text" id="name" placeholder="Ex. Jakov Sijarto" v-model="form.name" class="w-full px-3 py-2 border rounded-md h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="mb-4 text-left w-full">
+        <label for="email" class="block text-[20px] pb-2 text-white">Email Address</label>
+        <input type="email" id="email" placeholder="Ex. contact@jakovsijarto.com" v-model="form.email" class="w-full px-3 py-2 border rounded-md h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      </div>
+      <div class="flex w-[80%] gap-12 justify-between pt-4">
+        <div class="mb-4 text-left w-full">
+        <label for="phone" class="block text-[20px] pb-2 text-white">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Ex. +0917292812" v-model="form.phone" class="w-full px-3 py-2 border rounded-md h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      <div class="mb-4 text-left w-full">
+        <label for="subject" class="block text-[20px] pb-2 text-white">Subject</label>
+        <input type="text" id="subject" placeholder="Ex. New Project" v-model="form.subject" class="w-full px-3 py-2 border h-[58px] rounded-md border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
       </div>
       
-    </section>
-    <section class="w-full bg-[#0c0f16] max-h-[20em] flex justify-center items-center overflow-x-hidden mt-[0]" >
-      <img src="../../assets/black_bg_contact.jpg" alt="" class="object-fit opacity-[0.1] min-w-full max-h-[20em] relative">
-      <div class="absolute flex items-end w-[1200px] justify-between max-[1220px]:w-[800px] max-[820px]:flex-col max-[820px]:items-start max-[820px]:pl-8 max-[820px]:w-[auto]">
-        <div v-motion-slide-left>
-        <p class="text-[#74D5AF] tracking-[0.3rem] mb-[30px] contact_text_font1 max-[400px]:text-[50vw] uppercase">Let's</p>
-        <p class=" bold_text text-[transparent] font-bold  max-[1220px]:leading-[3rem] max-[460px]:text-[10px] contact_text_font2 max-[400px]:leading-[2rem]" style="-webkit-text-stroke: 1px white; ">TALK <span class="  naslov_sec2 bold_text !tracking-[-2px] max-[400px]:!tracking-[2px]" style="text-shadow:none;">ABOUT YOUR PROJECT</span>.</p>
+      <div class="mb-4 text-left pt-4 w-[80%] ">
+        <label for="message" class="block text-[20px] pb-2 text-white">Message</label>
+        <textarea id="message" v-model="form.message" placeholder="Type your message here..." class="w-full px-3 py-2 border rounded-md h-[160px] focus:outline-none border-white bg-[#0A0D13] focus:ring-2 focus:ring-blue-500"></textarea>
       </div>
-      <router-link to="/contact" tag="button"><button v-motion-slide-right class="text-[15px] py-[15px] px-[35px] border-2 border-[white] text-[white] font-bold tracking-[0.2rem]  px-[35px] max-[820px]:mt-8 max-[400px]:mt-[10px] animation-contact-button" @click="modalpop()">REACH OUT</button></router-link>
+      <div class="pb-2">
+        <button type="button" @click="handleReset" class="px-4 py-2 bg-gray-500 text-white rounded-md mr-2">Send message</button>
+        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-md">+0917292812</button>
       </div>
-    </section>
+    </form>
+  </div>
+</div>
+
+<div class="w-[1200px] mx-auto p-6 text-white rounded-lg shadow-md py-32">
+  <h2 class="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+  <div v-for="(faq, index) in faqs" :key="index" class="mb-4">
+    <button @click="toggleAnswer(index)" class="w-full text-left text-lg text-white py-2 border pl-6">
+      {{ faq.question }}
+      <span class="float-right mr-6 px-2 rounded-lg bg-white text-black">
+        {{ faq.isOpen ? '-' : '+' }}
+      </span>
+    </button>
+    <div v-if="faq.isOpen" class="text-white border p-2 pl-6">
+      {{ faq.answer }}
+    </div>
+  </div>
+</div>
+ 
     <footer_page />
   </div>
 </template>
@@ -140,11 +186,49 @@
  export default{
     data(){
       return{
-        isLoading: true
+        faqs: [
+        {
+          question: 'What is your return policy?',
+          answer: 'You can return any item within 30 days of purchase if you are not satisfied with it.',
+          isOpen: false,
+        },
+        {
+          question: 'How long does shipping take?',
+          answer: 'Shipping typically takes 5-7 business days, depending on your location.',
+          isOpen: false,
+        },
+        {
+          question: 'Do you offer international shipping?',
+          answer: 'Yes, we offer international shipping to select countries. Shipping fees may apply.',
+          isOpen: false,
+        },
+        {
+          question: 'How can I track my order?',
+          answer: 'Once your order has been shipped, you will receive an email with a tracking number and a link to track your order.',
+          isOpen: false,
+        },
+        {
+          question: 'Can I change or cancel my order?',
+          answer: 'You can change or cancel your order within 24 hours of placing it by contacting our customer support.',
+          isOpen: false,
+        },
+        {
+          question: 'What payment methods do you accept?',
+          answer: 'We accept Visa, MasterCard, American Express, and PayPal.',
+          isOpen: false,
+        },
+      ],
+        isLoading: true,
+        form: {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      }
     };
   },
-    methods: {
-    },
+  
     mounted() {
     setTimeout(() => {
       this.isLoading = false;
@@ -154,10 +238,26 @@
   left: 0, 
   behavior: 'smooth',
     });
-  } 
+  },
+  methods: {
+    toggleAnswer(index) {
+      this.faqs[index].isOpen = !this.faqs[index].isOpen;
+    },
+    handleSubmit() {
+      alert('Form submitted with: ' + JSON.stringify(this.form));
+      // Handle form submission logic here
+    },
+    handleReset() {
+      this.form = {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      };
+    }
   }
-
-  
+  }
 </script>
 <style>
 
@@ -171,7 +271,6 @@
 .animation-contact-button, .transition-footer-button{
     transition:all 0.5s ease-in;
   }
-
 
 .Barlow_Condensed{
   font-family: 'Barlow Condensed', sans-serif;
@@ -248,68 +347,12 @@
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-/* For Firefox */
-progress::-moz-progress-bar {
-  background-color: #74D5AF;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-		}
 
-		/* For Chrome or Safari */
-		progress::-webkit-progress-value {
-			background-color: #74D5AF;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-		}
-
-		/* For IE10 */
-		progress {
-			background-color: #74D5AF;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-		}
-  .message-icon{
-    font-size:40px;
-    color:#74D5AF;
-    margin-bottom:5px;
-  }
-  .half-background{
-    background: linear-gradient(
-    to right,
-    rgb(24,27,34) 0%,
-    rgb(24,27,34) 40%,
-    rgb(12,15,22) 40%, 	
-    rgb(12,15,22) 100%
-  );
-  }
-
-  .tooltip::before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 8px solid #75dab4;
-    position: absolute;
-    right: 15px;
-    bottom: 14px;
-  }
-  .tooltip::after{
-    content: attr(data-value);
-    position: absolute;
-    right: 10px;
-    top: -52px;
-    padding: 7px 15px;
-    border-radius: 5px;
-    background: #75dab4;
-    color: #111;
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .background-custom{
-    background: rgba(255, 255, 255, 0.02);
-    padding:15px 30px;
-  }
-  .contact_text_font1{
-    font-size: max(0.4vw, 100%, 0.4vw)
-  }
-
-
+.blur-effect {
+  box-shadow: 0px 2px 0px 0px #131518;
+  background-color: rgba(17, 20, 27, 0.8); /* Semi-transparent background */
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(3px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
+}
 </style>
