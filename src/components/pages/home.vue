@@ -58,7 +58,7 @@
         </div>
       </li>
       <li class=" h-[300px] w-full flex flex-col items-center justify-center  blur-effect">
-        <img src="../../assets/Putnička agencija.png" class="h-[100%] object-cover" alt="">
+        <img src="../../assets/pa.png" class="h-[100%] object-cover" alt="">
         <div class="flex flex-row py-4">
           Travel agency <span class="text-[10px] pl-2">(template)</span>
         </div>
