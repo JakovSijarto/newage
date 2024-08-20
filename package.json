@@ -16,7 +16,8 @@
     "caniuse-lite": "^1.0.30001645",
     "emailjs-com": "^3.2.0",
     "sweetalert": "^2.1.2",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

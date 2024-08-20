@@ -1,33 +1,39 @@
 <template>
     <div>
-    <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8  backdrop-blur-sm bg-[#fff] h-full">
+    <nav :class="{ 'onScroll': !view.topOfPage}" class="px-8  backdrop-blur-sm h-full max-[650px]:bg-black max-[650px]:bg-opacity-[0.4]">
       <ul
             id="hamburger-menu"
             :class="{ active: view.isActive,'onScroll': !view.topOfPage}"
-            class=" flex justify-center items-center flex-col text-center mt-[17.6em] min-[650px]:hidden w-full absolute"
+            class=" flex justify-center items-center flex-col gap-12 text-center mt-[32.7em] min-[651px]:hidden w-full absolute" 
             
             v-if="view.isActive"
           >
-            <li class="min-[650px]:hidden" id="navbar_naslovnica">
-              <router-link to="/" tag="button">Home</router-link>
+            <li class="" id="navbar_naslovnica">
+              Our work
             </li>
-            <li class="my-8 min-[650px]:hidden" id="navbar_naslovnica">
-              <router-link to="/about" tag="button">About Us</router-link>
+            <li class="" id="navbar_naslovnica">
+              About Us
             </li>
-            <li class="min-[650px]:hidden" id="navbar_naslovnica">
-              <router-link to="/contact" tag="button">Contact</router-link>
+            <li class="" id="navbar_naslovnica">
+              Services
+            </li>
+            <li class="" id="navbar_naslovnica">
+              FAQ
+            </li>
+            <li class="" id="navbar_naslovnica">
+              Contact us
             </li>
           </ul>
-      <div class="flex justify-between  items-center w-[1200px]">
+      <div class="flex justify-between  items-center w-[1200px] ">
         
-          <li><router-link to="/" tag="button"><img src="../../assets/logo_nobg.png" class="w-[186px] max-[470px]:w-[130px]"></router-link></li> 
+          <li><img src="../../assets/logo_nobg.png" class="w-[186px] max-[470px]:w-[130px]"></li> 
         <div class="flex justify-between w-[25%] max-[1200px]:w-auto items-center max-[650px]:hidden">
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><router-link to="/" tag="button">Our work</router-link></li>
-          <li class="max-[1200px]:mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/about" tag="button">About Us</router-link></li>
-          <li class="max-[1200px]:mr-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">Services</router-link></li>
-          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out"><router-link to="/contact" tag="button">FAQ</router-link></li>
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" ><a v-scroll-to="'#our_work'" >Our work</a></li>
+          <li class="max-[1200px]:mx-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><a v-scroll-to="'#about_us'" >About Us</a></li>
+          <li class="max-[1200px]:mr-8 transform hover:translate-y-1 transition duration-500 ease-in-out"><a v-scroll-to="'#services'">Services</a></li>
+          <li class="transform hover:translate-y-1 transition duration-500 ease-in-out" v-scroll-to="'#faq'"><a>FAQ</a></li>
         </div>
-        <li class="w-[186px] max-[1200px]:hidden"><router-link to="/contact" tag="button"><div class="border flex justify-center py-2">Contact us</div></router-link></li>
+        <li class="w-[186px] max-[1200px]:hidden"><a><div class="border flex justify-center py-2 animation-button" v-scroll-to="'#contact'">Contact us</div></a></li>
 
         
         <button
@@ -97,13 +103,18 @@
   </script> 
   
   <style scoped>
+  
   #hamburger-menu {
-    height:30vh;
+    height:26.5em;
     transition: all 0.4s ease-in-out;
+    background-color: rgba(17, 20, 27, 0.9); /* Semi-transparent background */
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(3px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(3px); /* For Safari */
   }
 
   .active + #navbar-menu {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(17, 20, 27, 0.8); /* Semi-transparent background */
     opacity: 1;
     visibility: visible;
   }
@@ -120,7 +131,6 @@
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: transparent; /* Semi-transparent background */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,4 +211,13 @@
 
   
   </style>
-  
+  <style>
+.animation-button{
+    transition: all 0.6s ease-out;
+  }
+.animation-button:hover{
+    background: #fff;
+    color:#000;
+    transition: all 0.3s ease-in;
+  }
+</style>
