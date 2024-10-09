@@ -34,9 +34,9 @@
     
     <!-- First row of items -->
     <ul class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6 w-full max-w-[1200px] px-4 sm:px-8 md:px-0">
-      <a href="https://fo4a.eu/" class="flex flex-col items-center border rounded-lg">
-        <div class="overflow-hidden rounded-lg shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/fo4a.png" class="h-full w-full object-cover rounded-lg" alt="Fo4a.eu">
+      <a href="https://fo4a.eu/" class="flex flex-col items-center">
+        <div class="overflow-hidden rounded-lg shadow-lg h-full w-full sm:h-[240px] ">
+          <img src="../../assets/fo4a.png" class="h-full w-full object-fit rounded-lg" alt="Fo4a.eu">
         </div>
         <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
           Fo4a.eu
@@ -44,9 +44,9 @@
         </div>
       </a>
 
-      <a href="https://www.groomingstudio-canisart.hr/" class="flex flex-col items-center border rounded-lg">
-        <div class="overflow-hidden rounded-lg shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/canisart.png" class="h-full w-full object-cover rounded-lg" alt="CanisArt.com">
+      <a href="https://www.groomingstudio-canisart.hr/" class="flex flex-col items-center">
+        <div class="overflow-hidden rounded-lg shadow-lg w-full sm:h-[240px] ">
+          <img src="../../assets/canisart.png" class="h-full w-full object-fitlč rounded-lg" alt="CanisArt.com">
         </div>
         <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
           CanisArt.com
@@ -54,46 +54,15 @@
         </div>
       </a>
 
-      <a href="https://apsopichr.com/#/" class="flex flex-col items-center border rounded-lg">
-        <div class="overflow-hidden rounded-lg shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/apsopic.png" class="h-full w-full object-cover rounded-lg" alt="APSopic.com">
+      <a href="https://apsopichr.com/#/" class="flex flex-col items-center">
+        <div class="overflow-hidden rounded-lg shadow-lg w-full sm:h-[240px] ">
+          <img src="../../assets/apsopic.png" class="h-full w-full object-fitlč rounded-lg" alt="APSopic.com">
         </div>
         <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
           APSopic.com
           <img src="../../assets/click.svg" alt="Click icon" class="ml-2 md:ml-3 w-[18px] sm:w-[20px] md:w-[24px] h-[18px] sm:h-[20px] md:h-[24px]">
         </div>
       </a>
-    </ul>
-
-    <!-- Second row of items -->
-    <ul class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6  w-full max-w-[1200px] px-4 sm:px-8 md:px-0">
-      <a href="https://jakovsijarto.github.io/cleaning_club/" class="flex flex-col items-center border rounded-lg">
-        <div class="overflow-hidden rounded-lg shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/cleaning-club.png" class="h-full w-full object-cover rounded-lg" alt="CleaningClub.com">
-        </div>
-        <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
-          CleaningClub.com
-          <img src="../../assets/click.svg" alt="Click icon" class="ml-2 md:ml-3 w-[18px] sm:w-[20px] md:w-[24px] h-[18px] sm:h-[20px] md:h-[24px]">
-        </div>
-      </a>
-
-      <li class="flex flex-col items-center border rounded-lg">
-        <div class="overflow-hidden rounded-lg shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/pizzerija.png" class="h-full w-full object-cover rounded-lg" alt="Pizzeria">
-        </div>
-        <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
-          Pizzeria <span class="text-[10px] sm:text-[12px] md:text-[14px] pl-1">(template)</span>
-        </div>
-      </li>
-
-      <li class="flex flex-col items-center border rounded-lg ">
-        <div class="overflow-hidden shadow-lg w-full h-[180px] sm:h-[240px] md:h-[300px]">
-          <img src="../../assets/pa.png" class="h-full w-full object-cover rounded-lg" alt="Travel agency">
-        </div>
-        <div class="flex items-center justify-center py-2 sm:py-3 md:py-4 text-[14px] sm:text-[16px] md:text-[18px]">
-          Travel agency <span class="text-[10px] sm:text-[12px] md:text-[14px] pl-1">(template)</span>
-        </div>
-      </li>
     </ul>
   </div>
 </div>
@@ -165,36 +134,36 @@
     <p class="text-[3rem] sm:text-[4rem] leading-[1.2rem] sm:leading-[1.5rem] Barlow_Condensed pb-4 sm:pb-8 font-bold pt-6">Get In Touch</p>
     <p class="text-[12px] sm:text-[14px] pb-8 sm:pb-12 w-[90%] sm:w-[70%] mx-auto py-4 ">If you have any type of questions or concerns feel free to reach out, there are no stupid questions :)</p>
     <div class="w-full sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[1200px] mx-auto p-4 sm:p-6 border shadow-md">
-      <form @submit.prevent="handleSubmit" class="w-full flex flex-col items-center py-6 sm:py-12">
-        <div class="flex flex-col sm:flex-row w-full sm:w-[80%] gap-4 sm:gap-12 justify-between">
-          <div class="mb-4 text-left w-full">
-            <label for="name" class="block text-[16px] sm:text-[20px] pb-2 text-white">Name</label>
-            <input type="text" id="name" placeholder="Ex. Jakov Sijarto" v-model="form.name" class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
-          <div class="mb-4 text-left w-full">
-            <label for="email" class="block text-[16px] sm:text-[20px] pb-2 text-white">Email Address</label>
-            <input type="email" id="email" placeholder="Ex. contact@jakovsijarto.com" v-model="form.email" class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
+      <form ref="form" @submit.prevent="sendEmail" class="w-full flex flex-col items-center py-6 sm:py-12">
+      <div class="flex flex-col sm:flex-row w-full sm:w-[80%] gap-4 sm:gap-12 justify-between">
+        <div class="mb-4 text-left w-full">
+          <label for="name" class="block text-[16px] sm:text-[20px] pb-2 text-white">Name</label>
+          <input  type="text" name="name" id="name" placeholder="Ex. Jakov Sijarto" v-model="name"  required class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
-        <div class="flex flex-col sm:flex-row w-full sm:w-[80%] gap-4 sm:gap-12 justify-between pt-4">
-          <div class="mb-4 text-left w-full">
-            <label for="phone" class="block text-[16px] sm:text-[20px] pb-2 text-white">Phone Number</label>
-            <input type="tel" id="phone" placeholder="Ex. +0917292812" v-model="form.phone" class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
-          <div class="mb-4 text-left w-full">
-            <label for="subject" class="block text-[16px] sm:text-[20px] pb-2 text-white">Subject</label>
-            <input type="text" id="subject" placeholder="Ex. New Project" v-model="form.subject" class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
+        <div class="mb-4 text-left w-full">
+          <label for="email" class="block text-[16px] sm:text-[20px] pb-2 text-white">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Ex. contact@jakovsijarto.com" v-model="email" required class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
-        <div class="mb-4 text-left pt-4 w-full sm:w-[80%]">
-          <label for="message" class="block text-[16px] sm:text-[20px] pb-2 text-white">Message</label>
-          <textarea id="message" v-model="form.message" placeholder="Type your message here..." class="w-full px-3 py-2 border rounded-md h-[120px] sm:h-[160px] focus:outline-none border-white bg-[#0A0D13] focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <div class="flex flex-col sm:flex-row w-full sm:w-[80%] gap-4 sm:gap-12 justify-between pt-4">
+        <div class="mb-4 text-left w-full">
+          <label for="phone" class="block text-[16px] sm:text-[20px] pb-2 text-white">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ex. +0917292812" v-model="phone" required class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
-        <div class="flex flex-col sm:flex-row gap-4 pt-4">
-          <button type="submit" @click="handleReset" class="px-4 py-2 text-white rounded-md bg-backdrop w-full sm:w-auto animation-button">Send</button>
-          <a href="tel:+0917292812" class="px-4 py-2 cursor-pointer text-white rounded-md bg-backdrop w-full sm:w-auto animation-button">+091 729 2812</a>
+        <div class="mb-4 text-left w-full">
+          <label for="subject" class="block text-[16px] sm:text-[20px] pb-2 text-white">Subject</label>
+          <input type="text" id="subject"  name="subject" placeholder="Ex. New Project" v-model="subject" required class="w-full px-3 py-2 border rounded-md h-[48px] sm:h-[58px] border-white bg-[#0A0D13] focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
-      </form>
+      </div>
+      <div class="mb-4 text-left pt-4 w-full sm:w-[80%]">
+        <label for="message" class="block text-[16px] sm:text-[20px] pb-2 text-white">Message</label>
+        <textarea id="message" v-model="message" name="message" placeholder="Type your message here..." class="w-full px-3 py-2 border rounded-md h-[120px] sm:h-[160px] focus:outline-none border-white bg-[#0A0D13] focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <button type="submit" value="Send" class="px-4 py-2 text-white rounded-md bg-backdrop w-full sm:w-auto animation-button">Send</button>
+        <a href="tel:+0917292812" class="px-4 py-2 cursor-pointer text-white rounded-md bg-backdrop w-full sm:w-auto animation-button">+091 729 2812</a>
+      </div>
+    </form>
     </div>
   </div>
 
@@ -224,6 +193,9 @@
 </script>
 
 <script>
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
+
  export default{
     data(){
       return{
@@ -266,7 +238,7 @@
         phone: '',
         subject: '',
         message: ''
-      }
+      },
     };
   },
   
@@ -281,23 +253,22 @@
     });
   },
   methods: {
-    toggleAnswer(index) {
-      this.faqs[index].isOpen = !this.faqs[index].isOpen;
+    sendEmail() {
+      emailjs.sendForm('service_clwuk55', 'template_owzjwz9', this.$refs.form, '6y58hytHJtD9eVBSB')
+        .then((result) => {
+             console.log('SUCCESS!', result.text);
+            swal({title: "Uspješno!", text: "Hvala Na poruci", type: 
+"success"}).then(function(){ 
+   location.reload();
+   }
+);
+        }, (error) => {
+            console.log('FAILED...', error.text);
+        });
+        
     },
-    handleSubmit() {
-      alert('Form submitted with: ' + JSON.stringify(this.form));
-      // Handle form submission logic here
-    },
-    handleReset() {
-      this.form = {
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
-      };
-    }
-  }
+
+  },
   }
 </script>
 <style>

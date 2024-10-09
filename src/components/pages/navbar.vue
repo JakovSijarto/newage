@@ -8,19 +8,19 @@
             
             v-if="view.isActive"
           >
-            <li class="" id="navbar_naslovnica">
+            <li class="" id="navbar_naslovnica" v-scroll-to="'#our_work'">
               Our work
             </li>
-            <li class="" id="navbar_naslovnica">
+            <li class="" id="navbar_naslovnica" v-scroll-to="'#about_us'">
               About Us
             </li>
-            <li class="" id="navbar_naslovnica">
+            <li class="" id="navbar_naslovnica" v-scroll-to="'#services'">
               Services
             </li>
-            <li class="" id="navbar_naslovnica">
+            <li class="" id="navbar_naslovnica" v-scroll-to="'#faq'">
               FAQ
             </li>
-            <li class="" id="navbar_naslovnica">
+            <li class="" id="navbar_naslovnica" v-scroll-to="'#contact'">
               Contact us
             </li>
           </ul>
